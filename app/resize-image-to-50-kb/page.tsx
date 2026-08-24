@@ -130,13 +130,13 @@ const relatedPages = [
       "Resize JPG and JPEG photos quickly online.",
   },
   {
-    href: "/resize-png",
+    href: "/resize-image",
     title: "Resize PNG",
     description:
       "Resize PNG images while maintaining sharp graphics.",
   },
   {
-    href: "/resize-webp",
+    href: "/webp-to-png",
     title: "Resize WebP",
     description:
       "Resize modern WebP images for websites and digital use.",
@@ -647,7 +647,7 @@ export default function ResizeImageTo50KbPage() {
                   </p>
 
                   <Link
-                    href="/resize-png"
+                    href="/resize-image"
                     className="mt-5 inline-flex text-sm font-bold text-blue-600 hover:text-blue-700"
                   >
                     Resize PNG →
@@ -669,7 +669,7 @@ export default function ResizeImageTo50KbPage() {
                   </p>
 
                   <Link
-                    href="/resize-webp"
+                    href="/webp-to-png"
                     className="mt-5 inline-flex text-sm font-bold text-blue-600 hover:text-blue-700"
                   >
                     Resize WebP →

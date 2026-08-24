@@ -17,13 +17,13 @@ const popularTasks = [
     title: "Resize Image to 100 KB",
     description:
       "Reduce an image to a maximum 100 KB file size for websites, applications, forms, and uploads.",
-    href: "/resize-image-to-100kb",
+    href: "/resize-image-to-100-kb",
   },
   {
     title: "Resize Image to 50 KB",
     description:
       "Create a smaller image that fits a 50 KB upload requirement while preserving as much quality as possible.",
-    href: "/resize-image-to-50kb",
+    href: "/resize-image-to-50-kb",
   },
   {
     title: "Resize JPG",
@@ -35,19 +35,19 @@ const popularTasks = [
     title: "Resize PNG",
     description:
       "Resize PNG images to exact dimensions or optimize their file size without uploading them to a server.",
-    href: "/resize-png",
+    href: "/resize-image",
   },
   {
     title: "Resize WebP",
     description:
       "Resize WebP images for websites, thumbnails, social media, and other digital uses.",
-    href: "/resize-webp",
+    href: "/webp-to-png",
   },
   {
     title: "Convert Image to WebP",
     description:
       "Convert compatible images to WebP while resizing and optimizing them for modern websites.",
-    href: "/image-to-webp",
+    href: "/convert-jpg-to-webp",
   },
 ];
 

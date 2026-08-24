@@ -8,7 +8,6 @@ type DropdownName =
   | "crop"
   | "compress"
   | "convert"
-  | "more"
   | null;
 
 interface DropdownItem {
@@ -101,7 +100,7 @@ function ConvertIcon() {
   );
 }
 
-function SparklesIcon() {
+function BlogIcon() {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -113,8 +112,10 @@ function SparklesIcon() {
       className="h-5 w-5"
       aria-hidden="true"
     >
-      <path d="m12 3-1.2 3.8a4 4 0 0 1-2.5 2.5L4.5 10.5l3.8 1.2a4 4 0 0 1 2.5 2.5L12 18l1.2-3.8a4 4 0 0 1 2.5-2.5l3.8-1.2-3.8-1.2a4 4 0 0 1-2.5-2.5L12 3Z" />
-      <path d="m19 16-.5 1.5L17 18l1.5.5L19 20l.5-1.5L21 18l-1.5-.5L19 16Z" />
+      <path d="M4 5a2 2 0 0 1 2-2h11a3 3 0 0 1 3 3v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5Z" />
+      <path d="M4 17h14" />
+      <path d="M8 7h8" />
+      <path d="M8 11h8" />
     </svg>
   );
 }
@@ -200,27 +201,6 @@ const dropdowns: Record<
       icon: <ConvertIcon />,
     },
   ],
-
-  more: [
-    {
-      label: "Image Tools",
-      description: "Explore more useful image utilities",
-      href: "#features",
-      icon: <SparklesIcon />,
-    },
-    {
-      label: "How It Works",
-      description: "See how Let's Resize It works",
-      href: "#how-it-works",
-      icon: <SparklesIcon />,
-    },
-    {
-      label: "Frequently Asked Questions",
-      description: "Find answers to common questions",
-      href: "#faq",
-      icon: <SparklesIcon />,
-    },
-  ],
 };
 
 export function Header() {
@@ -241,9 +221,7 @@ export function Header() {
    * Close dropdown when clicking outside.
    */
   useEffect(() => {
-    const handleClickOutside = (
-      event: MouseEvent
-    ) => {
+    const handleClickOutside = (event: MouseEvent) => {
       if (
         headerRef.current &&
         !headerRef.current.contains(
@@ -271,9 +249,7 @@ export function Header() {
    * Close dropdown when pressing Escape.
    */
   useEffect(() => {
-    const handleEscape = (
-      event: KeyboardEvent
-    ) => {
+    const handleEscape = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         setOpenDropdown(null);
         setIsMobileMenuOpen(false);
@@ -326,6 +302,7 @@ export function Header() {
       <div className="h-px w-full bg-gradient-to-r from-transparent via-blue-500/40 to-transparent" />
 
       <div className="mx-auto flex h-[72px] w-full max-w-7xl items-center px-4 sm:px-6 lg:px-8">
+
         {/* =====================================================
             BRAND
         ====================================================== */}
@@ -335,29 +312,13 @@ export function Header() {
           className="group flex shrink-0 items-center gap-3"
           aria-label="Let's Resize It - Home"
         >
-          <span
-            className="relative flex h-10 w-10 items-center justify-center rounded-xl bg-blue-600 text-white shadow-[0_4px_14px_rgba(37,99,235,0.25)] transition-all duration-200 group-hover:-translate-y-0.5 group-hover:shadow-[0_7px_20px_rgba(37,99,235,0.3)]"
-            aria-hidden="true"
-          >
-            <span className="absolute inset-[1px] rounded-[11px] border border-white/15" />
-
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.8"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="relative h-5 w-5"
-            >
-              <path d="M8 3H5a2 2 0 0 0-2 2v3" />
-              <path d="M16 3h3a2 2 0 0 1 2 2v3" />
-              <path d="M8 21H5a2 2 0 0 1-2-2v-3" />
-              <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
-              <path d="M8 8l4 4 4-4" />
-              <path d="M12 12v6" />
-            </svg>
-          </span>
+          <span className="relative flex h-10 w-10 shrink-0 items-center justify-center">
+  <img
+    src="/logo.png"
+    alt="Let's Resize It"
+    className="h-10 w-10 object-contain transition-transform duration-200 group-hover:-translate-y-0.5"
+  />
+</span>
 
           <span className="hidden text-[17px] font-bold tracking-[-0.02em] text-slate-950 sm:block">
             Let&apos;s{" "}
@@ -402,15 +363,18 @@ export function Header() {
             onToggle={toggleDropdown}
           />
 
-          <NavDropdown
-            label="More"
-            name="more"
-            openDropdown={openDropdown}
-            onToggle={toggleDropdown}
-          />
-
+          {/* Blog */}
           <Link
-            href="#how-it-works"
+            href="/blog"
+            onClick={closeEverything}
+            className="ml-1 inline-flex h-10 items-center rounded-lg px-3 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-950"
+          >
+            Blog
+          </Link>
+
+          {/* How It Works */}
+          <Link
+            href="/how-it-works"
             className="ml-1 inline-flex h-10 items-center rounded-lg px-3 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-950"
           >
             How It Works
@@ -421,12 +385,6 @@ export function Header() {
             DESKTOP RIGHT SIDE
         ====================================================== */}
         <div className="ml-auto hidden items-center gap-3 lg:flex">
-          <Link
-            href="#features"
-            className="text-sm font-medium text-slate-600 transition-colors hover:text-slate-950"
-          >
-            Features
-          </Link>
 
           <span
             className="h-5 w-px bg-slate-200"
@@ -462,6 +420,7 @@ export function Header() {
             TABLET / MOBILE ACTION
         ====================================================== */}
         <div className="ml-auto flex items-center gap-2 lg:hidden">
+
           <Link
             href="#resize"
             onClick={closeEverything}
@@ -533,6 +492,7 @@ export function Header() {
         }`}
       >
         <div className="mx-auto w-full max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+
           {openDropdown && (
             <div className="grid grid-cols-2 gap-3 md:grid-cols-3">
               {dropdowns[openDropdown].map(
@@ -581,13 +541,13 @@ export function Header() {
             </p>
 
             <Link
-              href="#features"
+              href="/blog"
               onClick={() =>
                 setOpenDropdown(null)
               }
               className="text-xs font-semibold text-blue-600 hover:text-blue-700"
             >
-              Explore all features →
+              Read our blog →
             </Link>
           </div>
         </div>
@@ -608,6 +568,7 @@ export function Header() {
           className="mx-auto max-h-[calc(100vh-73px)] w-full max-w-7xl overflow-y-auto px-4 py-4 sm:px-6"
           aria-label="Mobile navigation"
         >
+
           <MobileNavLink
             href="#resize"
             label="Resize"
@@ -640,21 +601,21 @@ export function Header() {
             onClick={closeEverything}
           />
 
-          <div className="my-3 h-px bg-slate-100" />
-
           <MobileNavLink
-            href="#how-it-works"
-            label="How It Works"
-            description="See how the tool works"
-            icon={<SparklesIcon />}
+            href="/blog"
+            label="Blog"
+            description="Tips, guides and image tools"
+            icon={<BlogIcon />}
             onClick={closeEverything}
           />
 
+          <div className="my-3 h-px bg-slate-100" />
+
           <MobileNavLink
-            href="#features"
-            label="Features"
-            description="Everything Let's Resize It offers"
-            icon={<SparklesIcon />}
+            href="/how-it-works"
+            label="How It Works"
+            description="See how the tool works"
+            icon={<BlogIcon />}
             onClick={closeEverything}
           />
 
@@ -662,7 +623,7 @@ export function Header() {
             href="#faq"
             label="FAQ"
             description="Answers to common questions"
-            icon={<SparklesIcon />}
+            icon={<BlogIcon />}
             onClick={closeEverything}
           />
 

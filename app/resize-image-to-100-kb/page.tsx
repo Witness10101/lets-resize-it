@@ -165,13 +165,13 @@ const relatedTools = [
     title: "Resize PNG",
     description:
       "Resize PNG images while maintaining the format.",
-    href: "/resize-png",
+    href: "/resize-image",
   },
   {
     title: "Resize WebP",
     description:
       "Resize WebP images for websites and digital use.",
-    href: "/resize-webp",
+    href: "/webp-to-png",
   },
   {
     title: "Compress Image",
@@ -185,29 +185,29 @@ function JsonLd() {
   const graph = [
     {
       "@type": "WebSite",
-      "@id": "https://snappytools.in/#website",
-      url: "https://snappytools.in/",
+      "@id": "https://www.reduceimages.com/#website",
+      url: "https://www.reduceimages.com/",
       name: "SnappyTools",
     },
     {
       "@type": "WebPage",
-      "@id": "https://snappytools.in/resize-image-to-100-kb#webpage",
-      url: "https://snappytools.in/resize-image-to-100-kb",
+      "@id": "https://www.reduceimages.com/resize-image-to-100-kb#webpage",
+      url: "https://www.reduceimages.com/resize-image-to-100-kb",
       name: "Resize Image to 100 KB Online Free",
       description:
         "Resize and reduce JPG, PNG and WebP images to approximately 100 KB online.",
       isPartOf: {
-        "@id": "https://snappytools.in/#website",
+        "@id": "https://www.reduceimages.com/#website",
       },
       breadcrumb: {
         "@id":
-          "https://snappytools.in/resize-image-to-100-kb#breadcrumb",
+          "https://www.reduceimages.com/resize-image-to-100-kb#breadcrumb",
       },
     },
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://snappytools.in/resize-image-to-100-kb#breadcrumb",
+        "https://www.reduceimages.com/resize-image-to-100-kb#breadcrumb",
       itemListElement: breadcrumbs.map((item, index) => ({
         "@type": "ListItem",
         position: index + 1,
@@ -220,7 +220,7 @@ function JsonLd() {
       name: "Resize Image to 100 KB",
       applicationCategory: "MultimediaApplication",
       operatingSystem: "Any",
-      url: "https://snappytools.in/resize-image-to-100-kb",
+      url: "https://www.reduceimages.com/resize-image-to-100-kb",
       description:
         "Free browser-based tool for reducing JPG, PNG and WebP images toward a 100 KB file-size target.",
       offers: {
@@ -592,14 +592,14 @@ export default function ResizeImageTo100KbPage() {
                 </Link>
                 ,{" "}
                 <Link
-                  href="/resize-png"
+                  href="/resize-image"
                   className="font-bold text-blue-600 underline decoration-blue-200 underline-offset-4 hover:text-blue-700"
                 >
                   PNG resizer
                 </Link>{" "}
                 or{" "}
                 <Link
-                  href="/resize-webp"
+                  href="/webp-to-png"
                   className="font-bold text-blue-600 underline decoration-blue-200 underline-offset-4 hover:text-blue-700"
                 >
                   WebP resizer

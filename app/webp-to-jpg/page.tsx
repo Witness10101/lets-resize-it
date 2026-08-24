@@ -437,7 +437,6 @@ export default function WebpToJpgPage() {
                     <div className="flex min-h-[260px] items-center justify-center p-5">
                       <img
                         id="webp-output-preview"
-                        src="/placeholder.svg"
                         alt="Converted JPG preview"
                         className="max-h-[420px] max-w-full rounded-lg object-contain shadow-sm"
                       />

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const popularTools = [
   {
     label: "Resize Image",
@@ -8,27 +10,43 @@ const popularTools = [
     href: "/compress-image",
   },
   {
+    label: "Resize to 50 KB",
+    href: "/resize-image-to-50-kb",
+  },
+  {
     label: "Resize to 100 KB",
-    href: "/resize-image-to-100kb",
+    href: "/resize-image-to-100-kb",
   },
   {
     label: "Resize to 200 KB",
-    href: "/resize-image-to-200kb",
+    href: "/resize-image-to-200-kb",
   },
   {
-    label: "Image to WebP",
-    href: "/image-to-webp",
+    label: "Resize to 500 KB",
+    href: "/resize-image-to-500-kb",
   },
   {
-    label: "Image to JPG",
-    href: "/image-to-jpg",
+    label: "Resize to 200×200",
+    href: "/resize-image-to-200x200",
+  },
+  {
+    label: "Resize to 300×300",
+    href: "/resize-image-to-300x300",
   },
 ];
 
 const conversionTools = [
   {
     label: "JPG to WebP",
-    href: "/jpg-to-webp",
+    href: "/convert-jpg-to-webp",
+  },
+  {
+    label: "JPG to PNG",
+    href: "/jpg-to-png",
+  },
+  {
+    label: "PNG to JPG",
+    href: "/png-to-jpg",
   },
   {
     label: "PNG to WebP",
@@ -42,32 +60,24 @@ const conversionTools = [
     label: "WebP to PNG",
     href: "/webp-to-png",
   },
-  {
-    label: "JPG to PNG",
-    href: "/jpg-to-png",
-  },
-  {
-    label: "PNG to JPG",
-    href: "/png-to-jpg",
-  },
 ];
 
 const resourceLinks = [
   {
     label: "How It Works",
-    href: "#how-it-works",
-  },
-  {
-    label: "Features",
-    href: "#features",
+    href: "/how-it-works",
   },
   {
     label: "Frequently Asked Questions",
-    href: "#faq",
+    href: "/faq",
   },
   {
     label: "About Us",
     href: "/about",
+  },
+  {
+    label: "Blog",
+    href: "/blog",
   },
 ];
 
@@ -78,7 +88,42 @@ const legalLinks = [
   },
   {
     label: "Terms of Use",
-    href: "/terms",
+    href: "/Terms",
+  },
+];
+
+const toolDirectory = [
+  {
+    label: "Resize images",
+    href: "/resize-image",
+  },
+  {
+    label: "Compress images",
+    href: "/compress-image",
+  },
+  {
+    label: "Resize to KB",
+    href: "/resize-image-to-100-kb",
+  },
+  {
+    label: "Resize to dimensions",
+    href: "/resize-image-to-1080x1080",
+  },
+  {
+    label: "JPG tools",
+    href: "/resize-jpg",
+  },
+  {
+    label: "PNG tools",
+    href: "/png-to-jpg",
+  },
+  {
+    label: "WebP tools",
+    href: "/webp-to-png",
+  },
+  {
+    label: "Convert JPG to WebP",
+    href: "/convert-jpg-to-webp",
   },
 ];
 
@@ -98,7 +143,7 @@ export function Footer() {
       <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* =========================================================
             CTA
-        ========================================================= */}
+        ========================================================== */}
 
         <div className="border-b border-slate-800 py-12 sm:py-16 lg:py-20">
           <div className="relative overflow-hidden rounded-3xl border border-slate-700/70 bg-slate-900/80 px-6 py-10 shadow-2xl sm:px-10 sm:py-12 lg:px-14 lg:py-14">
@@ -126,8 +171,8 @@ export function Footer() {
                 </p>
               </div>
 
-              <a
-                href="#resize"
+              <Link
+                href="/resize-image"
                 className="inline-flex h-12 shrink-0 items-center justify-center rounded-xl bg-blue-600 px-6 text-sm font-semibold text-white shadow-lg shadow-blue-950/30 transition-all hover:bg-blue-500 hover:shadow-blue-900/40 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-slate-900"
               >
                 Resize an image
@@ -145,31 +190,36 @@ export function Footer() {
                   <path d="M5 12h14" />
                   <path d="m13 6 6 6-6 6" />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
 
         {/* =========================================================
             BRAND + TRUST
-        ========================================================= */}
+        ========================================================== */}
 
         <div className="grid gap-12 py-14 lg:grid-cols-[1.4fr_2.6fr] lg:gap-20 lg:py-16">
           {/* Brand */}
           <div>
-            <a
-              href="#top"
+            <Link
+              href="/"
               aria-label="Let's Resize It home"
-              className="inline-flex items-center gap-3"
+              className="group inline-flex items-center gap-3"
             >
-              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-600 text-sm font-bold tracking-tight text-white shadow-lg shadow-blue-950/30">
-                LR
+              <span className="relative flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-white shadow-lg shadow-blue-950/30">
+                <img
+                  src="/logo.png"
+                  alt="Let's Resize It"
+                  className="h-full w-full object-contain p-1"
+                />
               </span>
 
-              <span className="text-xl font-bold tracking-tight text-white">
-                Let&apos;s Resize It
+              <span className="text-xl font-bold tracking-tight text-white transition-colors group-hover:text-blue-400">
+                Let&apos;s{" "}
+                <span className="text-blue-400">Resize It</span>
               </span>
-            </a>
+            </Link>
 
             <p className="mt-5 max-w-sm text-sm leading-6 text-slate-400">
               A simple online image toolkit for resizing,
@@ -179,6 +229,7 @@ export function Footer() {
 
             {/* Trust cards */}
             <div className="mt-7 grid max-w-sm grid-cols-2 gap-3">
+              {/* Private */}
               <div className="rounded-xl border border-slate-800 bg-slate-900/60 p-3">
                 <div className="flex items-center gap-2">
                   <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-emerald-500/10 text-emerald-400">
@@ -207,6 +258,7 @@ export function Footer() {
                 </p>
               </div>
 
+              {/* Simple */}
               <div className="rounded-xl border border-slate-800 bg-slate-900/60 p-3">
                 <div className="flex items-center gap-2">
                   <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-blue-500/10 text-blue-400">
@@ -248,12 +300,12 @@ export function Footer() {
               <ul className="mt-5 space-y-3">
                 {popularTools.map((tool) => (
                   <li key={tool.href}>
-                    <a
+                    <Link
                       href={tool.href}
                       className="text-sm text-slate-400 transition-colors hover:text-white"
                     >
                       {tool.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -268,12 +320,12 @@ export function Footer() {
               <ul className="mt-5 space-y-3">
                 {conversionTools.map((tool) => (
                   <li key={tool.href}>
-                    <a
+                    <Link
                       href={tool.href}
                       className="text-sm text-slate-400 transition-colors hover:text-white"
                     >
                       {tool.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -288,12 +340,12 @@ export function Footer() {
               <ul className="mt-5 space-y-3">
                 {resourceLinks.map((link) => (
                   <li key={link.href}>
-                    <a
+                    <Link
                       href={link.href}
                       className="text-sm text-slate-400 transition-colors hover:text-white"
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -303,7 +355,7 @@ export function Footer() {
 
         {/* =========================================================
             TOOL DIRECTORY
-        ========================================================= */}
+        ========================================================== */}
 
         <div className="border-t border-slate-800 py-10">
           <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
@@ -319,8 +371,8 @@ export function Footer() {
               </p>
             </div>
 
-            <a
-              href="#resize"
+            <Link
+              href="/resize-image"
               className="inline-flex shrink-0 items-center text-xs font-semibold text-blue-400 transition-colors hover:text-blue-300"
             >
               Explore the tools
@@ -338,34 +390,25 @@ export function Footer() {
                 <path d="M5 12h14" />
                 <path d="m13 6 6 6-6 6" />
               </svg>
-            </a>
+            </Link>
           </div>
 
           <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3">
-            {[
-              "Resize images",
-              "Compress images",
-              "Reduce image size",
-              "Resize to KB",
-              "Convert image format",
-              "JPG tools",
-              "PNG tools",
-              "WebP tools",
-            ].map((label) => (
-              <a
-                key={label}
-                href="#resize"
+            {toolDirectory.map((tool) => (
+              <Link
+                key={tool.href}
+                href={tool.href}
                 className="text-xs text-slate-500 transition-colors hover:text-slate-300"
               >
-                {label}
-              </a>
+                {tool.label}
+              </Link>
             ))}
           </div>
         </div>
 
         {/* =========================================================
             BOTTOM BAR
-        ========================================================= */}
+        ========================================================== */}
 
         <div className="flex flex-col gap-5 border-t border-slate-800 py-7 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex flex-col gap-1">
@@ -381,13 +424,13 @@ export function Footer() {
 
           <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
             {legalLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="text-xs text-slate-500 transition-colors hover:text-slate-300"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
 
             <span
@@ -395,8 +438,8 @@ export function Footer() {
               aria-hidden="true"
             />
 
-            <a
-              href="#top"
+            <Link
+              href="/"
               className="inline-flex items-center gap-1 text-xs font-medium text-slate-400 transition-colors hover:text-white"
             >
               Back to top
@@ -413,7 +456,7 @@ export function Footer() {
               >
                 <path d="m18 15-6-6-6 6" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

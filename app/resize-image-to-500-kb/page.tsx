@@ -175,13 +175,13 @@ const relatedTools = [
     title: "Resize PNG",
     description:
       "Resize PNG images while keeping the PNG format.",
-    href: "/resize-png",
+    href: "/resize-image",
   },
   {
     title: "Resize WebP",
     description:
       "Resize WebP images for modern websites and digital use.",
-    href: "/resize-webp",
+    href: "/webp-to-png",
   },
   {
     title: "Compress Image",
@@ -195,29 +195,29 @@ function JsonLd() {
   const graph = [
     {
       "@type": "WebSite",
-      "@id": "https://snappytools.in/#website",
-      url: "https://snappytools.in/",
+      "@id": "https://www.reduceimages.com/#website",
+      url: "https://www.reduceimages.com/",
       name: "SnappyTools",
     },
     {
       "@type": "WebPage",
-      "@id": "https://snappytools.in/resize-image-to-500-kb#webpage",
-      url: "https://snappytools.in/resize-image-to-500-kb",
+      "@id": "https://www.reduceimages.com/resize-image-to-500-kb#webpage",
+      url: "https://www.reduceimages.com/resize-image-to-500-kb",
       name: "Resize Image to 500 KB Online Free",
       description:
         "Free online tool for reducing JPG, PNG and WebP images to a 500 KB target.",
       isPartOf: {
-        "@id": "https://snappytools.in/#website",
+        "@id": "https://www.reduceimages.com/#website",
       },
       breadcrumb: {
         "@id":
-          "https://snappytools.in/resize-image-to-500-kb#breadcrumb",
+          "https://www.reduceimages.com/resize-image-to-500-kb#breadcrumb",
       },
     },
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://snappytools.in/resize-image-to-500-kb#breadcrumb",
+        "https://www.reduceimages.com/resize-image-to-500-kb#breadcrumb",
       itemListElement: breadcrumbs.map((item, index) => ({
         "@type": "ListItem",
         position: index + 1,
@@ -230,7 +230,7 @@ function JsonLd() {
       name: "Resize Image to 500 KB",
       applicationCategory: "MultimediaApplication",
       operatingSystem: "Any",
-      url: "https://snappytools.in/resize-image-to-500-kb",
+      url: "https://www.reduceimages.com/resize-image-to-500-kb",
       description:
         "Free browser-based image resizer for reducing JPG, PNG and WebP images toward a 500 KB target.",
       offers: {
@@ -603,14 +603,14 @@ export default function ResizeImageTo500KbPage() {
                 </Link>
                 ,{" "}
                 <Link
-                  href="/resize-png"
+                  href="/resize-image"
                   className="font-bold text-blue-600 underline decoration-blue-200 underline-offset-4 hover:text-blue-700"
                 >
                   PNG resizer
                 </Link>{" "}
                 or{" "}
                 <Link
-                  href="/resize-webp"
+                  href="/webp-to-png"
                   className="font-bold text-blue-600 underline decoration-blue-200 underline-offset-4 hover:text-blue-700"
                 >
                   WebP resizer

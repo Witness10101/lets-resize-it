@@ -334,7 +334,6 @@ export default function WebpToPngPage() {
                         <div className="flex min-h-[270px] items-center justify-center bg-slate-100 p-5">
                           <img
                             id="webp-original-preview"
-                            src="/placeholder.png"
                             alt="Original WebP preview"
                             className="max-h-[320px] max-w-full rounded-xl object-contain shadow-sm"
                           />
@@ -362,7 +361,6 @@ export default function WebpToPngPage() {
                         <div className="flex min-h-[270px] items-center justify-center bg-[linear-gradient(45deg,#f1f5f9_25%,transparent_25%),linear-gradient(-45deg,#f1f5f9_25%,transparent_25%),linear-gradient(45deg,transparent_75%,#f1f5f9_75%),linear-gradient(-45deg,transparent_75%,#f1f5f9_75%)] bg-[length:24px_24px] bg-[position:0_0,0_12px,12px_-12px,-12px_0] p-5">
                           <img
                             id="webp-output-preview"
-                            src="/placeholder.png"
                             alt="Converted PNG preview"
                             className="max-h-[320px] max-w-full rounded-xl object-contain shadow-sm"
                           />
