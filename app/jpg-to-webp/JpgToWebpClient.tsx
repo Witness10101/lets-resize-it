@@ -161,7 +161,7 @@ export default function JpgToWebpClient() {
       setImage(null);
       setStatus("error");
       setError(
-        "We couldn't read this image. Please try another JPG or JPEG file."
+        "We couldn&apos;t read this image. Please try another JPG or JPEG file."
       );
     }
   }, []);
@@ -492,7 +492,7 @@ export default function JpgToWebpClient() {
                 </div>
 
                 <h3 className="mt-4 text-lg font-bold text-slate-950">
-                  We couldn't use that image
+                  We couldn&apos;t use that image
                 </h3>
 
                 <p className="mt-2 max-w-lg text-sm leading-6 text-slate-600">

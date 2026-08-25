@@ -47,7 +47,7 @@ export async function generateMetadata({
 
   if (!post) {
     return {
-      title: "Article Not Found | Let's Resize It",
+      title: "Article Not Found | Let&apos;s Resize It",
       description: "The requested blog article could not be found.",
     };
   }
@@ -157,12 +157,12 @@ export default async function BlogPostPage({
 
     author: {
       "@type": "Organization",
-      name: "Let's Resize It",
+      name: "Let&apos;s Resize It",
     },
 
     publisher: {
       "@type": "Organization",
-      name: "Let's Resize It",
+      name: "Let&apos;s Resize It",
     },
   };
 

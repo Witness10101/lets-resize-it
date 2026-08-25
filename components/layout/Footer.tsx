@@ -204,13 +204,13 @@ export function Footer() {
           <div>
             <Link
               href="/"
-              aria-label="Let's Resize It home"
+              aria-label="Let&apos;s Resize It home"
               className="group inline-flex items-center gap-3"
             >
               <span className="relative flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-white shadow-lg shadow-blue-950/30">
                 <img
                   src="/logo.png"
-                  alt="Let's Resize It"
+                  alt="Let&apos;s Resize It"
                   className="h-full w-full object-contain p-1"
                 />
               </span>

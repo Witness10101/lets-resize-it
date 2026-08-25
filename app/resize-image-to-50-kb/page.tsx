@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     description:
       "Resize and reduce images to around 50 KB online. Free, fast and easy to use.",
     url: PAGE_URL,
-    siteName: "Let's Resize It",
+    siteName: "Let&apos;s Resize It",
     type: "website",
   },
   twitter: {
@@ -87,7 +87,7 @@ const faqs = [
   {
     question: "Is the 50 KB image resizer free?",
     answer:
-      "Yes. Let's Resize It provides this online image resizing tool for free, without requiring you to install desktop software.",
+      "Yes. Let&apos;s Resize It provides this online image resizing tool for free, without requiring you to install desktop software.",
   },
 ];
 
@@ -163,7 +163,7 @@ function StructuredData() {
     },
     publisher: {
       "@type": "Organization",
-      name: "Let's Resize It",
+      name: "Let&apos;s Resize It",
       url: SITE_URL,
     },
   };
@@ -296,7 +296,7 @@ export default function ResizeImageTo50KbPage() {
               <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
                 Reduce an image to around 50 KB online without complicated
                 software. Upload your JPG, PNG or WebP image and let
-                Let's Resize It find a practical balance between file size
+                Let&apos;s Resize It find a practical balance between file size
                 and image quality.
               </p>
 
@@ -483,7 +483,7 @@ export default function ResizeImageTo50KbPage() {
                   {
                     step: "3",
                     title: "Download the result",
-                    text: "Review the output and download your smaller image when you're ready.",
+                    text: "Review the output and download your smaller image when you&apos;re ready.",
                   },
                 ].map((item) => (
                   <article
@@ -737,7 +737,7 @@ export default function ResizeImageTo50KbPage() {
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <p className="text-sm font-bold uppercase tracking-[0.16em] text-blue-600">
-                  Let's Resize It
+                  Let&apos;s Resize It
                 </p>
 
                 <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
@@ -846,7 +846,7 @@ export default function ResizeImageTo50KbPage() {
               </h2>
 
               <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-blue-100 sm:text-base">
-                Upload your image and let Let's Resize It work toward the
+                Upload your image and let Let&apos;s Resize It work toward the
                 50 KB target.
               </p>
 

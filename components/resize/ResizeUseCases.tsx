@@ -202,7 +202,7 @@ export function ResizeUseCases() {
 
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
             Whether you need a specific pixel size, a smaller image
-            for an upload limit, or a different format, Let's Resize
+            for an upload limit, or a different format, Let&apos;s Resize
             It gives you the tools to prepare your image for its
             destination.
           </p>
@@ -277,7 +277,7 @@ export function ResizeUseCases() {
                 exact 200 × 200 pixel image, while another may limit
                 uploads to 100 KB. Instead of searching for a
                 different tool for every requirement, you can use
-                Let's Resize It to adjust the image to the
+                Let&apos;s Resize It to adjust the image to the
                 specifications you need.
               </p>
 

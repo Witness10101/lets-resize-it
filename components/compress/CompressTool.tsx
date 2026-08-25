@@ -506,7 +506,7 @@ export function CompressTool() {
         compressionError instanceof
         Error
           ? compressionError.message
-          : "We couldn't compress this image.";
+          : "We couldn&apos;t compress this image.";
 
       setError(message);
     } finally {

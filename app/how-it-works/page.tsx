@@ -6,7 +6,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "How It Works | Resize, Compress & Convert Images Online",
   description:
-    "Learn how Let's Resize It works. Resize, compress, and convert JPG, PNG, and WebP images online with simple browser-based image tools.",
+    "Learn How Let&apos;s Resize It works. Resize, compress, and convert JPG, PNG, and WebP images online with simple browser-based image tools.",
   keywords: [
     "how to resize an image",
     "how to resize images online",
@@ -23,16 +23,16 @@ export const metadata: Metadata = {
     canonical: "/how-it-works",
   },
   openGraph: {
-    title: "How It Works | Let's Resize It",
+    title: "How It Works | Let&apos;s Resize It",
     description:
-      "See how Let's Resize It makes image resizing, compression, and conversion simple.",
+      "See how Let&apos;s Resize It makes image resizing, compression, and conversion simple.",
     url: "/how-it-works",
-    siteName: "Let's Resize It",
+    siteName: "Let&apos;s Resize It",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "How It Works | Let's Resize It",
+    title: "How It Works | Let&apos;s Resize It",
     description:
       "Resize, compress, and convert images online in a few simple steps.",
   },
@@ -225,19 +225,19 @@ const useCases = [
 
 const faqs = [
   {
-    question: "How does Let's Resize It work?",
+    question: "How does Let&apos;s Resize It work?",
     answer:
-      "Let's Resize It provides simple browser-based image tools for resizing, compressing, and converting images. Choose a tool, upload your image, select the required settings, process it, and download the result.",
+      "Let&apos;s Resize It provides simple browser-based image tools for resizing, compressing, and converting images. Choose a tool, upload your image, select the required settings, process it, and download the result.",
   },
   {
     question: "Can I resize an image online without installing software?",
     answer:
-      "Yes. Let's Resize It is designed to provide image resizing tools directly in your browser, so you can resize images online without installing traditional image editing software.",
+      "Yes. Let&apos;s Resize It is designed to provide image resizing tools directly in your browser, so you can resize images online without installing traditional image editing software.",
   },
   {
     question: "Can I resize an image to a specific file size?",
     answer:
-      "Yes. Let's Resize It includes dedicated target-size tools for common file-size requirements such as 50 KB, 100 KB, 200 KB, and 500 KB.",
+      "Yes. Let&apos;s Resize It includes dedicated target-size tools for common file-size requirements such as 50 KB, 100 KB, 200 KB, and 500 KB.",
   },
   {
     question: "Can I resize an image to exact dimensions?",
@@ -247,12 +247,12 @@ const faqs = [
   {
     question: "Can I convert JPG to WebP?",
     answer:
-      "Yes. Let's Resize It includes a dedicated JPG to WebP conversion tool for converting JPG images into WebP format.",
+      "Yes. Let&apos;s Resize It includes a dedicated JPG to WebP conversion tool for converting JPG images into WebP format.",
   },
   {
     question: "What image formats are supported?",
     answer:
-      "Let's Resize It provides tools for commonly used image formats including JPG, PNG, and WebP, with specific conversion tools available between these formats.",
+      "Let&apos;s Resize It provides tools for commonly used image formats including JPG, PNG, and WebP, with specific conversion tools available between these formats.",
   },
   {
     question: "Do I need Photoshop or another image editor?",
@@ -307,7 +307,7 @@ export default function HowItWorksPage() {
     "@type": "HowTo",
     name: "How to resize, compress, and convert images online",
     description:
-      "Learn how to use Let's Resize It to resize, compress, and convert images online.",
+      "Learn how to use Let&apos;s Resize It to resize, compress, and convert images online.",
     totalTime: "PT2M",
     step: steps.map((step) => ({
       "@type": "HowToStep",
@@ -375,7 +375,7 @@ export default function HowItWorksPage() {
               </h1>
 
               <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
-                Let's Resize It makes everyday image tasks simple.
+                Let&apos;s Resize It makes everyday image tasks simple.
                 Choose the tool you need, upload your image, select
                 your required settings, and download the finished
                 image — without complicated editing software.
@@ -383,7 +383,7 @@ export default function HowItWorksPage() {
 
               <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <Link
-                  href="/resize-image"
+                  href=""
                   className="inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-blue-600 px-6 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition-all hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-600/20 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
                 >
                   Resize an Image
@@ -555,13 +555,13 @@ export default function HowItWorksPage() {
 
                 <p className="mt-4 text-sm leading-7 text-slate-600 sm:text-base">
                   Instead of opening a full image editor for a small
-                  task, choose the specific Let's Resize It tool that
+                  task, choose the specific Let&apos;s Resize It tool that
                   matches what you need.
                 </p>
 
                 <div className="mt-7">
                   <Link
-                    href="/resize-image"
+                    href=""
                     className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition-colors hover:text-blue-700"
                   >
                     Start with image resizing
@@ -618,7 +618,7 @@ export default function HowItWorksPage() {
                   </h2>
 
                   <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-400 sm:text-base">
-                    Let's Resize It is designed around the image tasks
+                    Let&apos;s Resize It is designed around the image tasks
                     people actually need. You do not need to learn a
                     full editing application just to change an image
                     size or format.
@@ -755,7 +755,7 @@ export default function HowItWorksPage() {
               </div>
 
               <Link
-                href="/resize-image"
+                href="/"
                 className="inline-flex shrink-0 items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-700"
               >
                 View resize tools
@@ -768,7 +768,7 @@ export default function HowItWorksPage() {
                 {
                   title: "Resize Image",
                   description: "Change image dimensions.",
-                  href: "/resize-image",
+                  href: "#resize-image",
                 },
                 {
                   title: "Resize to 50 KB",
@@ -813,7 +813,7 @@ export default function HowItWorksPage() {
                 {
                   title: "Resize PNG",
                   description: "Resize PNG images online.",
-                  href: "/resize-image",
+                  href: "",
                 },
                 {
                   title: "Resize WebP",
@@ -828,7 +828,7 @@ export default function HowItWorksPage() {
                 {
                   title: "Compress PNG",
                   description: "Reduce PNG file size.",
-                  href: "/compress-image",
+                  href: "#compress-image",
                 },
                 {
                   title: "JPG to WebP",
@@ -887,7 +887,7 @@ export default function HowItWorksPage() {
               </span>
 
               <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
-                How Let's Resize It works
+                How Let&apos;s Resize It works
               </h2>
 
               <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
@@ -962,7 +962,7 @@ export default function HowItWorksPage() {
 
                 <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
                   <Link
-                    href="/resize-image"
+                    href="/"
                     className="inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-white px-6 text-sm font-semibold text-blue-700 shadow-lg transition hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-600"
                   >
                     Resize an Image
@@ -986,3 +986,6 @@ export default function HowItWorksPage() {
     </>
   );
 }
+
+
+

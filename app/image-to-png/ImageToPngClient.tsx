@@ -249,7 +249,7 @@ export default function ImageToPngClient() {
         setDownloadUrl(null);
         setStatus("error");
         setError(
-          "We couldn't read this image. Please try a valid JPG, JPEG, WebP, GIF or BMP file."
+          "We couldn&apos;t read this image. Please try a valid JPG, JPEG, WebP, GIF or BMP file."
         );
       }
     },

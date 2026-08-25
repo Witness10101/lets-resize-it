@@ -7,14 +7,14 @@ import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 
 export const metadata: Metadata = {
-  title: "Image Guides, Tutorials & Tips | Let's Resize It",
+  title: "Image Guides, Tutorials & Tips | Let&apos;s Resize It",
   description:
     "Practical image guides covering resizing, compression, file sizes, image formats, website images, and image optimization.",
   alternates: {
     canonical: "/blog",
   },
   openGraph: {
-    title: "Image Guides, Tutorials & Tips | Let's Resize It",
+    title: "Image Guides, Tutorials & Tips | Let&apos;s Resize It",
     description:
       "Practical guides for resizing, compressing, converting, and optimizing images.",
     url: "/blog",
@@ -102,7 +102,7 @@ function getThumbnailStyle(slug: string) {
 
   return (
     styles[slug] ?? {
-      eyebrow: "LET'S RESIZE IT",
+      eyebrow: "Let&apos;s Resize It",
       title: "Image Guide",
       icon: "↗",
     }

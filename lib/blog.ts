@@ -2,7 +2,7 @@
 
 /*
  * ============================================================
- * LET'S RESIZE IT — BLOG CONTENT DATABASE
+ * Let&apos;s Resize It — BLOG CONTENT DATABASE
  * ============================================================
  *
  * This file is the single source of truth for the blog.
@@ -125,7 +125,7 @@ export interface BlogArticle {
   /*
    * Optional publication dates.
    *
-   * Deliberately left optional so we don't invent dates before
+   * Deliberately left optional so we don&apos;t invent dates before
    * the articles actually go live.
    */
   publishedAt?: string;
@@ -386,7 +386,7 @@ const howToResizeAnImage: BlogArticle = {
     },
     {
       title: "How to Resize an Image Without Losing Quality",
-      href: "/blog/blog/blog/how-to-resize-an-image-without-losing-quality",
+      href: "/blog/how-to-resize-an-image-without-losing-quality",
       description:
         "Understand what causes quality loss and how to avoid it.",
     },
@@ -621,7 +621,7 @@ const howToResizeTo100KB: BlogArticle = {
     },
     {
       title: "How to Resize an Image Without Losing Quality",
-      href: "/blog/blog/blog/how-to-resize-an-image-without-losing-quality",
+      href: "/blog/how-to-resize-an-image-without-losing-quality",
     },
   ],
 
@@ -1106,7 +1106,7 @@ const howToCompressAnImage: BlogArticle = {
     },
     {
       title: "How to Resize an Image Without Losing Quality",
-      href: "/blog/blog/blog/how-to-resize-an-image-without-losing-quality",
+      href: "/blog/how-to-resize-an-image-without-losing-quality",
     },
   ],
 

@@ -10,7 +10,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Compress Image Online Free – Reduce Image Size | Let's Resize It",
+  title: "Compress Image Online Free – Reduce Image Size | Let&apos;s Resize It",
   description:
     "Compress JPG, PNG, and WebP images online for free. Reduce image file size, target 100KB, 200KB, 500KB or a custom size while keeping your image dimensions and quality where possible.",
   keywords: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     description:
       "Reduce JPG, PNG, and WebP image file sizes online. Set a target size and download your optimized image instantly.",
     url: "/compress-image",
-    siteName: "Let's Resize It",
+    siteName: "Let&apos;s Resize It",
     type: "website",
   },
   twitter: {
@@ -139,7 +139,7 @@ export default function CompressImagePage() {
             </p>
 
             <p className="mt-4 text-sm leading-7 text-slate-600 sm:text-base">
-              Let's Resize It supports common image formats including
+              Let&apos;s Resize It supports common image formats including
               JPG, PNG, and WebP. Depending on your requirements, you
               can reduce the image file size, select an output format,
               and work toward a specific maximum file size.
@@ -205,7 +205,7 @@ const structuredData = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "Let's Resize It Image Compressor",
+      name: "Let&apos;s Resize It Image Compressor",
       url: "/compress-image",
       applicationCategory: "MultimediaApplication",
       operatingSystem: "Any",
@@ -249,3 +249,4 @@ const structuredData = {
     },
   ],
 };
+

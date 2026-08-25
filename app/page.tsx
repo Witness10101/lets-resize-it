@@ -82,21 +82,21 @@ export default function Home() {
         "@type": "WebSite",
         "@id": "https://letsresizeit.com/#website",
         url: "https://letsresizeit.com/",
-        name: "Let's Resize It",
+        name: "Let&apos;s Resize It",
         description:
           "Free online image resizer for changing image dimensions, reducing file size, compressing images and converting JPG, PNG and WebP files.",
       },
       {
         "@type": "Organization",
         "@id": "https://letsresizeit.com/#organization",
-        name: "Let's Resize It",
+        name: "Let&apos;s Resize It",
         url: "https://letsresizeit.com/",
       },
       {
         "@type": "SoftwareApplication",
         "@id":
           "https://letsresizeit.com/#application",
-        name: "Let's Resize It",
+        name: "Let&apos;s Resize It",
         applicationCategory:
           "MultimediaApplication",
         operatingSystem: "Web",
@@ -182,7 +182,7 @@ export default function Home() {
 
               <div className="mt-6 space-y-5 text-base leading-8 text-slate-600">
                 <p>
-                  Let's Resize It is a free online image
+                  Let&apos;s Resize It is a free online image
                   resizer that helps you change image
                   dimensions, reduce image file size,
                   compress photos and convert images
@@ -235,7 +235,7 @@ export default function Home() {
 
               <p className="mt-4 text-base leading-7 text-slate-600">
                 Choose the type of image task you need.
-                Let's Resize It is designed for common
+                Let&apos;s Resize It is designed for common
                 website, application, social media and
                 document upload requirements.
               </p>
@@ -419,7 +419,7 @@ export default function Home() {
                   <p>
                     Instead of repeatedly guessing which
                     compression setting will work, use the
-                    maximum file size option in Let's Resize
+                    maximum file size option in Let&apos;s Resize
                     It. Enter the limit you need and the
                     browser-based image processor works
                     toward producing an image that fits
@@ -513,7 +513,7 @@ export default function Home() {
                 </p>
 
                 <p>
-                  Let's Resize It lets you enter custom
+                  Let&apos;s Resize It lets you enter custom
                   dimensions in pixels. When both width and
                   height are supplied, the tool can work
                   within the requested dimensions while
@@ -656,7 +656,7 @@ export default function Home() {
               <p className="mt-5 text-base leading-8 text-slate-300">
                 Image resizing should not require a desktop
                 graphics application or a complicated workflow.
-                Let's Resize It focuses on the tasks people
+                Let&apos;s Resize It focuses on the tasks people
                 actually need when preparing images for the
                 web and online forms.
               </p>

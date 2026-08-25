@@ -297,7 +297,7 @@ export default function ResizeImageTo500KbClient() {
       console.error(processingError);
 
       setError(
-        "We couldn't process this image. Please try another JPG, PNG or WebP file."
+        "We couldn&apos;t process this image. Please try another JPG, PNG or WebP file."
       );
     } finally {
       setIsProcessing(false);
@@ -557,7 +557,7 @@ export default function ResizeImageTo500KbClient() {
               </h2>
 
               <p className="mt-2 max-w-md text-sm leading-6 text-slate-500">
-                We're balancing image dimensions and JPEG compression
+                We&apos;re balancing image dimensions and JPEG compression
                 to get as close as possible to the 500 KB target.
               </p>
 
@@ -646,7 +646,7 @@ export default function ResizeImageTo500KbClient() {
                     </p>
 
                     <p className="mt-1 text-sm leading-6 text-emerald-700">
-                      We've prepared a compatible JPEG version for
+                      We&apos;ve prepared a compatible JPEG version for
                       download.
                     </p>
                   </div>

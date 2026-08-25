@@ -236,7 +236,7 @@ export default function ResizeImageTo200x200Client() {
       console.error(processingError);
 
       setError(
-        "We couldn't resize this image. Please try another image file."
+        "We couldn&apos;t resize this image. Please try another image file."
       );
     } finally {
       setIsProcessing(false);
@@ -806,7 +806,7 @@ export default function ResizeImageTo200x200Client() {
                 A 200×200 image has a 1:1 aspect ratio, making it
                 useful whenever a compact square image is required.
                 The right dimensions depend on the platform or
-                application you're uploading to, so always check its
+                application you&apos;re uploading to, so always check its
                 specific requirements.
               </p>
             </div>
@@ -863,7 +863,7 @@ export default function ResizeImageTo200x200Client() {
               </h2>
 
               <p className="mt-5 text-lg leading-8 text-slate-600">
-                You don't need Photoshop or desktop software for a
+                You don&apos;t need Photoshop or desktop software for a
                 simple fixed-dimension resize.
               </p>
 

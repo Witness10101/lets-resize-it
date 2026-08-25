@@ -167,7 +167,7 @@ export function ImageToJpgTool() {
       const message =
         conversionError instanceof Error
           ? conversionError.message
-          : "We couldn't convert this image to JPG.";
+          : "We couldn&apos;t convert this image to JPG.";
 
       setError(message);
     } finally {

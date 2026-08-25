@@ -205,7 +205,7 @@ export default function ResizeImageTo1080x1080Client() {
       console.error(processingError);
 
       setError(
-        "We couldn't resize this image. Please try another image file."
+        "We couldn&apos;t resize this image. Please try another image file."
       );
     } finally {
       setIsProcessing(false);

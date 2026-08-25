@@ -185,7 +185,7 @@ export function ResizeTool() {
       setPreviewUrl(null);
     } catch {
       setError(
-        "We couldn't read this image. Please try another image."
+        "We couldn&apos;t read this image. Please try another image."
       );
     } finally {
       setIsAnalyzing(false);
@@ -333,7 +333,7 @@ export function ResizeTool() {
       const message =
         processingError instanceof Error
           ? processingError.message
-          : "We couldn't optimize this image.";
+          : "We couldn&apos;t optimize this image.";
 
       setError(message);
     } finally {

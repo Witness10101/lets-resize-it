@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Us | Let's Resize It",
+  title: "About Us | Let&apos;s Resize It",
   description:
-    "Learn about Let's Resize It, a simple online image toolkit for resizing, compressing, and converting images quickly and easily.",
+    "Learn about Let&apos;s Resize It, a simple online image toolkit for resizing, compressing, and converting images quickly and easily.",
   keywords: [
-    "about Let's Resize It",
+    "about Let&apos;s Resize It",
     "online image tools",
     "image resize tools",
     "image compression tools",
@@ -21,18 +21,18 @@ export const metadata: Metadata = {
     canonical: "/about",
   },
   openGraph: {
-    title: "About Us | Let's Resize It",
+    title: "About Us | Let&apos;s Resize It",
     description:
-      "Learn about Let's Resize It and our mission to make everyday image resizing, compression, and conversion simple.",
+      "Learn about Let&apos;s Resize It and our mission to make everyday image resizing, compression, and conversion simple.",
     url: "/about",
-    siteName: "Let's Resize It",
+    siteName: "Let&apos;s Resize It",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "About Us | Let's Resize It",
+    title: "About Us | Let&apos;s Resize It",
     description:
-      "Learn about Let's Resize It and our mission to make everyday image tools simple and accessible.",
+      "Learn about Let&apos;s Resize It and our mission to make everyday image tools simple and accessible.",
   },
 };
 
@@ -86,7 +86,7 @@ const principles = [
     number: "04",
     title: "Keep improving",
     description:
-      "Let's Resize It is built to grow based on real-world usage, useful feedback, and the image-processing needs people actually have.",
+      "Let&apos;s Resize It is built to grow based on real-world usage, useful feedback, and the image-processing needs people actually have.",
   },
 ];
 
@@ -98,18 +98,18 @@ export default function AboutPage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    name: "About Let's Resize It",
+    name: "About Let&apos;s Resize It",
     url: `${baseUrl}/about`,
     description:
-      "Learn about Let's Resize It, an online image toolkit focused on making image resizing, compression, and conversion simple.",
+      "Learn about Let&apos;s Resize It, an online image toolkit focused on making image resizing, compression, and conversion simple.",
     isPartOf: {
       "@type": "WebSite",
-      name: "Let's Resize It",
+      name: "Let&apos;s Resize It",
       url: baseUrl,
     },
     publisher: {
       "@type": "Organization",
-      name: "Let's Resize It",
+      name: "Let&apos;s Resize It",
       url: baseUrl,
     },
   };
@@ -563,7 +563,7 @@ export default function AboutPage() {
                     href="/"
                     className="inline-flex h-12 items-center justify-center rounded-xl border border-slate-200 bg-white px-6 text-sm font-semibold text-slate-700 transition hover:bg-slate-50 hover:text-slate-950"
                   >
-                    Explore Let's Resize It
+                    Explore Let&apos;s Resize It
                   </Link>
                 </div>
               </div>

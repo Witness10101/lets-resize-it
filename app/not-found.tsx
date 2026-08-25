@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Page Not Found | Let's Resize It",
+  title: "Page Not Found | Let&apos;s Resize It",
   description:
-    "The page you're looking for could not be found. Explore Let's Resize It's free image resizing, compression, and conversion tools.",
+    "The page you&apos;re looking for could not be found. Explore Let&apos;s Resize It's free image resizing, compression, and conversion tools.",
   robots: {
     index: false,
     follow: true,

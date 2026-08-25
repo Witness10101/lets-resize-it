@@ -464,7 +464,7 @@ export default function ResizeImageTo50KbClient() {
         console.error(processingError);
 
         setError(
-          "We couldn't process this image. Please try another image or a different output format.",
+          "We couldn&apos;t process this image. Please try another image or a different output format.",
         );
       } finally {
         setIsProcessing(false);
@@ -985,7 +985,7 @@ export default function ResizeImageTo50KbClient() {
 
                 <div>
                   <p className="font-bold">
-                    We couldn't process that image.
+                    We couldn&apos;t process that image.
                   </p>
 
                   <p className="mt-1 leading-6">

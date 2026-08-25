@@ -139,7 +139,7 @@ export default function ConvertJpgToWebpClient() {
       console.error(processingError);
 
       setError(
-        "We couldn't convert this image. Please try another JPG or JPEG file."
+        "We couldn&apos;t convert this image. Please try another JPG or JPEG file."
       );
     } finally {
       setIsProcessing(false);

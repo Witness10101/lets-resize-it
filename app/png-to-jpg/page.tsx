@@ -49,7 +49,7 @@ export default function PngToJpgPage() {
    */
   useEffect(() => {
     document.title =
-      "PNG to JPG Converter Online – Convert PNG to JPG Free | Let's Resize It";
+      "PNG to JPG Converter Online – Convert PNG to JPG Free | Let&apos;s Resize It";
 
     const description =
       "Convert PNG images to JPG online for free. Fast, secure PNG to JPEG conversion directly in your browser. No uploads, no registration and no software required.";
@@ -279,7 +279,7 @@ export default function PngToJpgPage() {
       const message =
         conversionError instanceof Error
           ? conversionError.message
-          : "We couldn't convert this PNG to JPG.";
+          : "We couldn&apos;t convert this PNG to JPG.";
 
       setError(message);
     } finally {
@@ -1075,7 +1075,7 @@ export default function PngToJpgPage() {
             </h2>
 
             <p className="mx-auto mt-3 max-w-2xl text-sm leading-6 text-slate-600">
-              Let's Resize It provides simple browser-based tools for
+              Let&apos;s Resize It provides simple browser-based tools for
               resizing, compressing and converting images.
             </p>
 

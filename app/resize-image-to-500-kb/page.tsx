@@ -201,8 +201,8 @@ function JsonLd() {
     },
     {
       "@type": "WebPage",
-      "@id": "https://www.reduceimages.com/resize-image-to-500-kb#webpage",
-      url: "https://www.reduceimages.com/resize-image-to-500-kb",
+      "@id": "https://www.reduceimages.com/#webpage",
+      url: "https://www.reduceimages.com/",
       name: "Resize Image to 500 KB Online Free",
       description:
         "Free online tool for reducing JPG, PNG and WebP images to a 500 KB target.",
@@ -211,13 +211,13 @@ function JsonLd() {
       },
       breadcrumb: {
         "@id":
-          "https://www.reduceimages.com/resize-image-to-500-kb#breadcrumb",
+          "https://www.reduceimages.com/#breadcrumb",
       },
     },
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.reduceimages.com/resize-image-to-500-kb#breadcrumb",
+        "https://www.reduceimages.com/#breadcrumb",
       itemListElement: breadcrumbs.map((item, index) => ({
         "@type": "ListItem",
         position: index + 1,
@@ -230,7 +230,7 @@ function JsonLd() {
       name: "Resize Image to 500 KB",
       applicationCategory: "MultimediaApplication",
       operatingSystem: "Any",
-      url: "https://www.reduceimages.com/resize-image-to-500-kb",
+      url: "https://www.reduceimages.com/",
       description:
         "Free browser-based image resizer for reducing JPG, PNG and WebP images toward a 500 KB target.",
       offers: {
@@ -387,7 +387,7 @@ export default function ResizeImageTo500KbPage() {
               </h2>
 
               <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-slate-600">
-                You don't need desktop editing software or complicated
+                You don&apos;t need desktop editing software or complicated
                 export settings. Upload the image, let the tool optimize
                 it toward the target and download the result.
               </p>

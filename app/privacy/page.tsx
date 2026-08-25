@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Let's Resize It",
+  title: "Privacy Policy | Let&apos;s Resize It",
   description:
-    "Read the Privacy Policy for Let's Resize It. Learn how we handle image processing, website usage, cookies, analytics, data privacy, and your rights when using our online image tools.",
+    "Read the Privacy Policy for Let&apos;s Resize It. Learn how we handle image processing, website usage, cookies, analytics, data privacy, and your rights when using our online image tools.",
   keywords: [
-    "Let's Resize It privacy policy",
+    "Let&apos;s Resize It privacy policy",
     "image resizer privacy policy",
     "online image tools privacy",
     "image compression privacy",
@@ -20,18 +20,18 @@ export const metadata: Metadata = {
     canonical: "/privacy",
   },
   openGraph: {
-    title: "Privacy Policy | Let's Resize It",
+    title: "Privacy Policy | Let&apos;s Resize It",
     description:
-      "Learn how Let's Resize It handles privacy, image processing, website usage, and user data.",
+      "Learn how Let&apos;s Resize It handles privacy, image processing, website usage, and user data.",
     url: "/privacy",
-    siteName: "Let's Resize It",
+    siteName: "Let&apos;s Resize It",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Privacy Policy | Let's Resize It",
+    title: "Privacy Policy | Let&apos;s Resize It",
     description:
-      "Learn how Let's Resize It handles privacy, image processing, website usage, and user data.",
+      "Learn how Let&apos;s Resize It handles privacy, image processing, website usage, and user data.",
   },
 };
 

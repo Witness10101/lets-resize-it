@@ -264,7 +264,7 @@ export function JpgToPngTool() {
 
     image.onerror = () => {
       setError(
-        "We couldn't read this image. Please try another JPG file."
+        "We couldn&apos;t read this image. Please try another JPG file."
       );
     };
 
@@ -335,7 +335,7 @@ export function JpgToPngTool() {
         conversionError instanceof
         Error
           ? conversionError.message
-          : "We couldn't convert this image.";
+          : "We couldn&apos;t convert this image.";
 
       setError(message);
       setConverted(null);

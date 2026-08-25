@@ -191,23 +191,23 @@ function JsonLd() {
     },
     {
       "@type": "WebPage",
-      "@id": "https://www.reduceimages.com/resize-image-to-100-kb#webpage",
-      url: "https://www.reduceimages.com/resize-image-to-100-kb",
+      "@id": "https://www.reduceimages.com",
+      url: "https://www.reduceimages.com",
       name: "Resize Image to 100 KB Online Free",
       description:
         "Resize and reduce JPG, PNG and WebP images to approximately 100 KB online.",
       isPartOf: {
-        "@id": "https://www.reduceimages.com/#website",
+        "@id": "https://www.reduceimages.com",
       },
       breadcrumb: {
         "@id":
-          "https://www.reduceimages.com/resize-image-to-100-kb#breadcrumb",
+          "https://www.reduceimages.com",
       },
     },
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.reduceimages.com/resize-image-to-100-kb#breadcrumb",
+        "https://www.reduceimages.com",
       itemListElement: breadcrumbs.map((item, index) => ({
         "@type": "ListItem",
         position: index + 1,
@@ -220,7 +220,7 @@ function JsonLd() {
       name: "Resize Image to 100 KB",
       applicationCategory: "MultimediaApplication",
       operatingSystem: "Any",
-      url: "https://www.reduceimages.com/resize-image-to-100-kb",
+      url: "https://www.reduceimages.com",
       description:
         "Free browser-based tool for reducing JPG, PNG and WebP images toward a 100 KB file-size target.",
       offers: {

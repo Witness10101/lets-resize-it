@@ -136,7 +136,7 @@ export default function ResizeJpgClient() {
       setPreviewUrl(null);
 
       setError(
-        "We couldn't read this JPG image. Please try another image."
+        "We couldn&apos;t read this JPG image. Please try another image."
       );
     }
   };
@@ -215,7 +215,7 @@ export default function ResizeJpgClient() {
       console.error(processingError);
 
       setError(
-        "We couldn't resize this JPG image. Please try another image or smaller dimensions."
+        "We couldn&apos;t resize this JPG image. Please try another image or smaller dimensions."
       );
     } finally {
       setIsProcessing(false);
@@ -825,7 +825,7 @@ export default function ResizeJpgClient() {
               <h2>How to resize a JPG image online</h2>
 
               <p>
-                Resizing a JPG image changes the image's pixel dimensions,
+                Resizing a JPG image changes the image&apos;s pixel dimensions,
                 such as reducing a large photograph to 1200×800 pixels or
                 creating a smaller image for a website, application, form,
                 profile, or document.
@@ -882,7 +882,7 @@ export default function ResizeJpgClient() {
               <h3>Resize JPG while keeping the aspect ratio</h3>
 
               <p>
-                The aspect ratio describes the relationship between an image's
+                The aspect ratio describes the relationship between an image&apos;s
                 width and height. Locking the aspect ratio helps prevent the
                 image from becoming stretched or squashed when you change one
                 dimension.
@@ -1120,3 +1120,4 @@ export default function ResizeJpgClient() {
     </>
   );
 }
+

@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     description:
       "Convert images to PNG quickly and securely in your browser. Free, simple and easy to use.",
     url: PAGE_URL,
-    siteName: "Let's Resize It",
+    siteName: "Let&apos;s Resize It",
     type: "website",
   },
   twitter: {
@@ -66,7 +66,7 @@ const faqs = [
   {
     question: "Is the Image to PNG converter free?",
     answer:
-      "Yes. Let's Resize It provides the Image to PNG converter as a free online image conversion tool.",
+      "Yes. Let&apos;s Resize It provides the Image to PNG converter as a free online image conversion tool.",
   },
   {
     question: "Do I need to install software?",
@@ -148,7 +148,7 @@ function JsonLd() {
     },
     publisher: {
       "@type": "Organization",
-      name: "Let's Resize It",
+      name: "Let&apos;s Resize It",
       url: SITE_URL,
     },
   };
@@ -320,7 +320,7 @@ export default function ImageToPngPage() {
               </p>
 
               <p className="mt-4 text-base leading-8 text-slate-600">
-                Let's Resize It gives you a simple way to{" "}
+                Let&apos;s Resize It gives you a simple way to{" "}
                 <strong className="font-semibold text-slate-900">
                   convert images to PNG online
                 </strong>
@@ -498,7 +498,7 @@ export default function ImageToPngPage() {
               </h2>
 
               <p className="mt-4 text-base leading-7 text-slate-300">
-                You don't need Photoshop or complicated image-editing
+                You don&apos;t need Photoshop or complicated image-editing
                 software. The converter keeps the process simple.
               </p>
             </div>
@@ -800,3 +800,4 @@ export default function ImageToPngPage() {
     </>
   );
 }
+

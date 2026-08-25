@@ -6,7 +6,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Frequently Asked Questions | Image Resizing & Compression",
   description:
-    "Find answers to common questions about resizing images, reducing image size in KB, compressing JPG and PNG files, converting images to WebP, image dimensions, quality, privacy, and using Let's Resize It.",
+    "Find answers to common questions about resizing images, reducing image size in KB, compressing JPG and PNG files, converting images to WebP, image dimensions, quality, privacy, and using Let&apos;s Resize It.",
   keywords: [
     "image resize FAQ",
     "image resizer FAQ",
@@ -30,16 +30,16 @@ export const metadata: Metadata = {
     canonical: "/faq",
   },
   openGraph: {
-    title: "Frequently Asked Questions | Let's Resize It",
+    title: "Frequently Asked Questions | Let&apos;s Resize It",
     description:
       "Answers to common questions about image resizing, compression, file sizes, dimensions, JPG, PNG, WebP, privacy, and online image tools.",
     url: "/faq",
-    siteName: "Let's Resize It",
+    siteName: "Let&apos;s Resize It",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Frequently Asked Questions | Let's Resize It",
+    title: "Frequently Asked Questions | Let&apos;s Resize It",
     description:
       "Learn how to resize, compress, and convert images with answers to common image-processing questions.",
   },
@@ -60,10 +60,10 @@ const faqCategories: {
     id: "general",
     label: "General",
     description:
-      "Understand what Let's Resize It does and how the image tools work.",
+      "Understand what Let&apos;s Resize It does and how the image tools work.",
     faqs: [
       {
-        question: "What is Let's Resize It?",
+        question: "What is Let&apos;s Resize It?",
         answer: (
           <>
             <p>
@@ -94,7 +94,7 @@ const faqCategories: {
         ),
       },
       {
-        question: "Is Let's Resize It free to use?",
+        question: "Is Let&apos;s Resize It free to use?",
         answer: (
           <>
             <p>
@@ -129,7 +129,7 @@ const faqCategories: {
         ),
       },
       {
-        question: "Can I use Let's Resize It on my phone?",
+        question: "Can I use Let&apos;s Resize It on my phone?",
         answer: (
           <>
             <p>
@@ -780,7 +780,7 @@ const faqCategories: {
         ),
       },
       {
-        question: "Does Let's Resize It store my images?",
+        question: "Does Let&apos;s Resize It store my images?",
         answer: (
           <>
             <p>
@@ -797,7 +797,7 @@ const faqCategories: {
                 href="/privacy"
                 className="font-semibold text-blue-600 hover:text-blue-700"
               >
-                Let's Resize It Privacy Policy
+                Let&apos;s Resize It Privacy Policy
               </Link>
               .
             </p>
@@ -961,12 +961,12 @@ export default function FAQPage() {
         "@type": "WebPage",
         "@id": `${baseUrl}/faq#webpage`,
         url: `${baseUrl}/faq`,
-        name: "Frequently Asked Questions | Let's Resize It",
+        name: "Frequently Asked Questions | Let&apos;s Resize It",
         description:
           "Answers to common questions about image resizing, compression, file sizes, dimensions, JPG, PNG, WebP, privacy, and online image tools.",
         isPartOf: {
           "@type": "WebSite",
-          name: "Let's Resize It",
+          name: "Let&apos;s Resize It",
           url: baseUrl,
         },
       },
@@ -989,7 +989,7 @@ export default function FAQPage() {
       },
       {
         "@type": "Organization",
-        name: "Let's Resize It",
+        name: "Let&apos;s Resize It",
         url: baseUrl,
       },
     ],

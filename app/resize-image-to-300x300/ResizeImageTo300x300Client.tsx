@@ -162,7 +162,7 @@ export default function ResizeImageTo300x300Client() {
         originalObjectUrlRef.current = null;
 
         setError(
-          "We couldn't read this image. Please try another JPG, PNG, or WebP file."
+          "We couldn&apos;t read this image. Please try another JPG, PNG, or WebP file."
         );
       };
 

@@ -198,8 +198,8 @@ function JsonLd() {
     },
     {
       "@type": "WebPage",
-      "@id": "https://www.reduceimages.com/resize-image-to-200-kb#webpage",
-      url: "https://www.reduceimages.com/resize-image-to-200-kb",
+      "@id": "https://www.reduceimages.com/#webpage",
+      url: "https://www.reduceimages.com/",
       name: "Resize Image to 200 KB Online Free",
       description:
         "Free online tool for reducing JPG, PNG and WebP images to a 200 KB target.",
@@ -208,13 +208,13 @@ function JsonLd() {
       },
       breadcrumb: {
         "@id":
-          "https://www.reduceimages.com/resize-image-to-200-kb#breadcrumb",
+          "https://www.reduceimages.com/#breadcrumb",
       },
     },
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.reduceimages.com/resize-image-to-200-kb#breadcrumb",
+        "https://www.reduceimages.com/#breadcrumb",
       itemListElement: breadcrumbs.map((item, index) => ({
         "@type": "ListItem",
         position: index + 1,
@@ -227,7 +227,7 @@ function JsonLd() {
       name: "Resize Image to 200 KB",
       applicationCategory: "MultimediaApplication",
       operatingSystem: "Any",
-      url: "https://www.reduceimages.com/resize-image-to-200-kb",
+      url: "https://www.reduceimages.com/",
       description:
         "Free browser-based image resizer for reducing JPG, PNG and WebP images toward a 200 KB target.",
       offers: {

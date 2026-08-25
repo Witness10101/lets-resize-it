@@ -35,7 +35,7 @@ const popularTasks = [
     title: "Resize PNG",
     description:
       "Resize PNG images to exact dimensions or optimize their file size without uploading them to a server.",
-    href: "/resize-image",
+    href: "/",
   },
   {
     title: "Resize WebP",
@@ -87,7 +87,7 @@ const faqItems = [
   {
     question: "Can I resize an image to a specific KB size?",
     answer:
-      "Yes. Let's Resize It can optimize an image toward a maximum file-size requirement such as 50 KB, 100 KB, 200 KB, or a custom target. The final result depends on the image content, dimensions, and selected output format.",
+      "Yes. Let&apos;s Resize It can optimize an image toward a maximum file-size requirement such as 50 KB, 100 KB, 200 KB, or a custom target. The final result depends on the image content, dimensions, and selected output format.",
   },
   {
     question: "Can I resize an image to exact dimensions?",
@@ -97,10 +97,10 @@ const faqItems = [
   {
     question: "Can I resize JPG, PNG and WebP images?",
     answer:
-      "Yes. Let's Resize It supports common image formats including JPG, PNG, and WebP, with options to choose an output format when supported by the browser.",
+      "Yes. Let&apos;s Resize It supports common image formats including JPG, PNG, and WebP, with options to choose an output format when supported by the browser.",
   },
   {
-    question: "Does Let's Resize It upload my images?",
+    question: "Does Let&apos;s Resize It upload my images?",
     answer:
       "No. Image processing is designed to happen directly inside your browser. Your selected image is processed locally instead of being uploaded to a remote image-processing server.",
   },
@@ -144,7 +144,7 @@ export function SEOContent() {
           </h2>
 
           <p className="mt-5 text-base leading-8 text-slate-600 sm:text-lg">
-            Let's Resize It is a free online image resizer that helps you
+            Let&apos;s Resize It is a free online image resizer that helps you
             resize, compress, and optimize images without complicated software.
             Set the dimensions you need, choose a maximum file size, select an
             output format, and download the result directly from your browser.
@@ -160,7 +160,7 @@ export function SEOContent() {
           <p className="mt-4 text-base leading-8 text-slate-600 sm:text-lg">
             There is no need to install desktop software or create an account.
             Image processing happens locally in your browser, so your images
-            don't need to be sent to a remote server for the resizing process.
+            don&apos;t need to be sent to a remote server for the resizing process.
           </p>
         </div>
 
@@ -336,7 +336,7 @@ export function SEOContent() {
               </h2>
 
               <p className="mt-2 max-w-3xl text-sm leading-7 text-slate-600">
-                Let's Resize It is designed around browser-side image
+                Let&apos;s Resize It is designed around browser-side image
                 processing. Your selected image does not need to be uploaded
                 to a server just to resize or optimize it. That makes the tool
                 convenient for personal photos, documents, screenshots, and

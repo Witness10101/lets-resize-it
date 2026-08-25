@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms of Use | Let's Resize It",
+  title: "Terms of Use | Let&apos;s Resize It",
   description:
-    "Read the Terms of Use for Let's Resize It, including rules for using our online image resizing, compression, and conversion tools, intellectual property, privacy, limitations, and user responsibilities.",
+    "Read the Terms of Use for Let&apos;s Resize It, including rules for using our online image resizing, compression, and conversion tools, intellectual property, privacy, limitations, and user responsibilities.",
   keywords: [
-    "Let's Resize It terms of use",
+    "Let&apos;s Resize It terms of use",
     "image tools terms",
     "online image resizer terms",
     "image compressor terms",
@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: "Terms of Use | Let's Resize It",
+    title: "Terms of Use | Let&apos;s Resize It",
     description:
-      "The Terms of Use governing your use of Let's Resize It and its online image tools.",
+      "The Terms of Use governing your use of Let&apos;s Resize It and its online image tools.",
     url: "/Terms",
-    siteName: "Let's Resize It",
+    siteName: "Let&apos;s Resize It",
     type: "website",
   },
 };

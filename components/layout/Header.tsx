@@ -310,12 +310,12 @@ export function Header() {
           href="/"
           onClick={closeEverything}
           className="group flex shrink-0 items-center gap-3"
-          aria-label="Let's Resize It - Home"
+          aria-label="Let&apos;s Resize It - Home"
         >
           <span className="relative flex h-10 w-10 shrink-0 items-center justify-center">
   <img
     src="/logo.png"
-    alt="Let's Resize It"
+    alt="Let&apos;s Resize It"
     className="h-10 w-10 object-contain transition-transform duration-200 group-hover:-translate-y-0.5"
   />
 </span>

@@ -18,9 +18,11 @@ interface ResultSectionProps {
 
 function formatFileSize(sizeInBytes: number): string {
   if (sizeInBytes < 1024) return `${sizeInBytes} B`;
+
   if (sizeInBytes < 1024 * 1024) {
     return `${(sizeInBytes / 1024).toFixed(1)} KB`;
   }
+
   return `${(sizeInBytes / (1024 * 1024)).toFixed(2)} MB`;
 }
 
@@ -28,6 +30,7 @@ function getFormatLabel(type: string): string {
   if (type === "image/jpeg") return "JPG";
   if (type === "image/png") return "PNG";
   if (type === "image/webp") return "WEBP";
+
   return type.split("/").pop()?.toUpperCase() ?? "IMAGE";
 }
 
@@ -35,6 +38,7 @@ function getExtension(type: string): string {
   if (type === "image/jpeg") return "jpg";
   if (type === "image/png") return "png";
   if (type === "image/webp") return "webp";
+
   return "jpg";
 }
 
@@ -49,7 +53,9 @@ export function ResultSection({
 }: ResultSectionProps) {
   const [result, setResult] = useState<ResizeResult | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
-  const [originalPreviewUrl, setOriginalPreviewUrl] = useState<string | null>(null);
+  const [originalPreviewUrl, setOriginalPreviewUrl] = useState<string | null>(
+    null,
+  );
   const [isProcessing, setIsProcessing] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -68,12 +74,15 @@ export function ResultSection({
       case "jpeg":
         requestedFormat = "image/jpeg";
         break;
+
       case "png":
         requestedFormat = "image/png";
         break;
+
       case "webp":
         requestedFormat = "image/webp";
         break;
+
       default:
         requestedFormat = undefined;
     }
@@ -104,6 +113,10 @@ export function ResultSection({
   /* Original preview */
   useEffect(() => {
     const url = URL.createObjectURL(file);
+
+    // This state update is intentional: the object URL is created
+    // when the selected file changes and must be exposed to the JSX.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setOriginalPreviewUrl(url);
 
     return () => {
@@ -126,6 +139,7 @@ export function ResultSection({
         if (cancelled) return;
 
         const url = URL.createObjectURL(output.blob);
+
         setResult(output);
         setPreviewUrl(url);
       } catch (processingError) {
@@ -134,10 +148,12 @@ export function ResultSection({
         setError(
           processingError instanceof Error
             ? processingError.message
-            : "We couldn't optimize this image."
+            : "We couldn't optimize this image.",
         );
       } finally {
-        if (!cancelled) setIsProcessing(false);
+        if (!cancelled) {
+          setIsProcessing(false);
+        }
       }
     };
 
@@ -151,7 +167,9 @@ export function ResultSection({
   /* Cleanup optimized preview */
   useEffect(() => {
     return () => {
-      if (previewUrl) URL.revokeObjectURL(previewUrl);
+      if (previewUrl) {
+        URL.revokeObjectURL(previewUrl);
+      }
     };
   }, [previewUrl]);
 
@@ -167,11 +185,14 @@ export function ResultSection({
 
     anchor.href = url;
     anchor.download = downloadName;
+
     document.body.appendChild(anchor);
     anchor.click();
     anchor.remove();
 
-    window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+    window.setTimeout(() => {
+      URL.revokeObjectURL(url);
+    }, 1000);
   };
 
   const sizeReduction = result
@@ -197,12 +218,14 @@ export function ResultSection({
             <span className="inline-flex items-center rounded-full border border-blue-100 bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">
               Step 3
             </span>
+
             <h2
               id="result-heading"
               className="mt-4 text-2xl font-bold tracking-tight text-slate-950 sm:text-3xl"
             >
               Optimizing your image
             </h2>
+
             <p className="mt-3 text-sm leading-6 text-slate-600 sm:text-base">
               We&apos;re applying your requirements directly in your browser.
             </p>
@@ -213,9 +236,11 @@ export function ResultSection({
               className="mx-auto h-10 w-10 animate-spin rounded-full border-4 border-slate-200 border-t-blue-600"
               aria-hidden="true"
             />
+
             <p className="mt-5 text-sm font-semibold text-slate-900">
               Optimizing image...
             </p>
+
             <p className="mt-2 text-xs text-slate-500">
               This usually takes only a few seconds.
             </p>
@@ -257,9 +282,11 @@ export function ResultSection({
             >
               We couldn&apos;t optimize this image
             </h2>
+
             <p className="mx-auto mt-3 max-w-xl text-sm leading-6 text-slate-600">
               {error}
             </p>
+
             <button
               type="button"
               onClick={onStartOver}
@@ -273,7 +300,9 @@ export function ResultSection({
     );
   }
 
-  if (!result || !previewUrl) return null;
+  if (!result || !previewUrl) {
+    return null;
+  }
 
   return (
     <section
@@ -308,7 +337,10 @@ export function ResultSection({
           <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
             <div className="flex items-center justify-between border-b border-slate-100 px-5 py-4">
               <div className="min-w-0">
-                <p className="text-sm font-semibold text-slate-950">Original</p>
+                <p className="text-sm font-semibold text-slate-950">
+                  Original
+                </p>
+
                 <p className="mt-1 truncate text-xs text-slate-500">
                   {file.name}
                 </p>
@@ -334,7 +366,10 @@ export function ResultSection({
           <div className="overflow-hidden rounded-2xl border border-emerald-200 bg-white shadow-sm">
             <div className="flex items-center justify-between border-b border-emerald-100 px-5 py-4">
               <div>
-                <p className="text-sm font-semibold text-slate-950">Optimized</p>
+                <p className="text-sm font-semibold text-slate-950">
+                  Optimized
+                </p>
+
                 <p className="mt-1 text-xs font-medium text-emerald-600">
                   {getFormatLabel(result.type)}
                 </p>
@@ -358,10 +393,14 @@ export function ResultSection({
         <div className="mt-5 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
           <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
             <div className="rounded-xl bg-slate-50 p-4">
-              <p className="text-xs font-medium text-slate-500">Optimized size</p>
+              <p className="text-xs font-medium text-slate-500">
+                Optimized size
+              </p>
+
               <p className="mt-1 text-sm font-bold text-slate-950">
                 {formatFileSize(result.blob.size)}
               </p>
+
               {requestedLimit && (
                 <p className="mt-1 text-xs text-slate-500">
                   Limit: {requestedLimit} KB
@@ -370,21 +409,30 @@ export function ResultSection({
             </div>
 
             <div className="rounded-xl bg-slate-50 p-4">
-              <p className="text-xs font-medium text-slate-500">Dimensions</p>
+              <p className="text-xs font-medium text-slate-500">
+                Dimensions
+              </p>
+
               <p className="mt-1 text-sm font-bold text-slate-950">
                 {result.width} × {result.height}
               </p>
             </div>
 
             <div className="rounded-xl bg-slate-50 p-4">
-              <p className="text-xs font-medium text-slate-500">Format</p>
+              <p className="text-xs font-medium text-slate-500">
+                Format
+              </p>
+
               <p className="mt-1 text-sm font-bold text-slate-950">
                 {getFormatLabel(result.type)}
               </p>
             </div>
 
             <div className="rounded-xl bg-slate-50 p-4">
-              <p className="text-xs font-medium text-slate-500">Size change</p>
+              <p className="text-xs font-medium text-slate-500">
+                Size change
+              </p>
+
               <p className="mt-1 text-sm font-bold text-emerald-600">
                 {sizeReduction.toFixed(1)}% smaller
               </p>
@@ -481,6 +529,7 @@ export function ResultSection({
                 <path d="m7 10 5 5 5-5" />
                 <path d="M5 21h14" />
               </svg>
+
               Download image
             </button>
 
@@ -507,6 +556,7 @@ export function ResultSection({
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
               <path d="m9 12 2 2 4-4" />
             </svg>
+
             Your image was processed locally in your browser. It was not
             uploaded to a server.
           </div>

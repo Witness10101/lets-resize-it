@@ -5,7 +5,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "PNG to WebP Converter Online – Free PNG to WebP | Let's Resize It",
+  title: "PNG to WebP Converter Online – Free PNG to WebP | Let&apos;s Resize It",
   description:
     "Convert PNG images to WebP online for free. Reduce image file sizes while keeping excellent quality and transparency. Fast, private, and easy to use with no upload required.",
   keywords: [
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     description:
       "Convert PNG images to WebP online for free. Optimize image sizes while preserving quality and transparency.",
     url: "/png-to-webp",
-    siteName: "Let's Resize It",
+    siteName: "Let&apos;s Resize It",
     type: "website",
   },
   twitter: {
@@ -47,7 +47,7 @@ const faqs = [
   {
     question: "How do I convert PNG to WebP?",
     answer:
-      "Upload your PNG image using the converter above. Let's Resize It processes the image directly in your browser and creates a WebP version that you can download immediately.",
+      "Upload your PNG image using the converter above. Let&apos;s Resize It processes the image directly in your browser and creates a WebP version that you can download immediately.",
   },
   {
     question: "Is the PNG to WebP converter free?",
@@ -169,7 +169,7 @@ export default function PngToWebpPage() {
         "@type": "HowTo",
         name: "How to Convert PNG to WebP",
         description:
-          "Convert a PNG image to WebP online using Let's Resize It.",
+          "Convert a PNG image to WebP online using Let&apos;s Resize It.",
         step: [
           {
             "@type": "HowToStep",
@@ -359,7 +359,7 @@ export default function PngToWebpPage() {
             </p>
 
             <p className="mx-auto mt-4 max-w-3xl text-base leading-7 text-slate-600">
-              With Let's Resize It, you can convert PNG to WebP online without
+              With Let&apos;s Resize It, you can convert PNG to WebP online without
               installing desktop software. Select your image, let the browser
               process it, and download the resulting WebP file.
             </p>

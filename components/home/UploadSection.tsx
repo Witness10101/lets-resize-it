@@ -71,7 +71,7 @@ export function UploadSection({
       onFileSelected?.(file, result);
     } catch {
       setError(
-        "We couldn't read this image. Please try another image."
+        "We couldn&apos;t read this image. Please try another image."
       );
     } finally {
       setIsAnalyzing(false);

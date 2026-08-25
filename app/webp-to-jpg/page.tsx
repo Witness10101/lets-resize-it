@@ -5,7 +5,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "WebP to JPG Converter Online – Free & Private | Let's Resize It",
+  title: "WebP to JPG Converter Online – Free & Private | Let&apos;s Resize It",
   description:
     "Convert WebP images to JPG online for free. Fast, private WebP to JPEG conversion directly in your browser with no signup or software installation.",
   keywords: [
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     description:
       "Convert WebP images to JPG directly in your browser. Free, fast and private with no signup or software installation.",
     url: "/webp-to-jpg",
-    siteName: "Let's Resize It",
+    siteName: "Let&apos;s Resize It",
     type: "website",
   },
   twitter: {
@@ -52,7 +52,7 @@ const faqs = [
   {
     question: "Is this WebP to JPG converter free?",
     answer:
-      "Yes. Let's Resize It provides this WebP to JPG converter as a free online image conversion tool. No software installation is required.",
+      "Yes. Let&apos;s Resize It provides this WebP to JPG converter as a free online image conversion tool. No software installation is required.",
   },
   {
     question: "Are my WebP images uploaded to a server?",
@@ -1184,7 +1184,7 @@ export default function WebpToJpgPage() {
       showError(
         conversionError instanceof Error
           ? conversionError.message
-          : "We couldn't convert this WebP image. Please try another file."
+          : "We couldn&apos;t convert this WebP image. Please try another file."
       );
     } finally {
       convertButton.disabled = false;

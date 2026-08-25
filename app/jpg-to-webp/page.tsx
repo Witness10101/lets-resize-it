@@ -10,7 +10,7 @@ const SITE_URL = "https://letsresizeit.com";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
 
-  title: "JPG to WebP Converter Online – Free JPEG to WebP | Let's Resize It",
+  title: "JPG to WebP Converter Online – Free JPEG to WebP | Let&apos;s Resize It",
 
   description:
     "Convert JPG and JPEG images to WebP online for free. Reduce image file size, optimize images for websites, and download high-quality WebP files instantly. Fast, secure, browser-based conversion.",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     title: "JPG to WebP Converter Online – Free JPEG to WebP",
     description:
       "Convert JPG and JPEG images to WebP online for free. Optimize image file size and create web-ready images instantly.",
-    siteName: "Let's Resize It",
+    siteName: "Let&apos;s Resize It",
   },
 
   twitter: {
@@ -132,7 +132,7 @@ const faqSchema = {
       name: "Can I convert JPG to WebP online for free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Let's Resize It's JPG to WebP converter is free to use and does not require an account.",
+        text: "Yes. Let&apos;s Resize It's JPG to WebP converter is free to use and does not require an account.",
       },
     },
     {
@@ -686,7 +686,7 @@ export default function JpgToWebpPage() {
               </h2>
 
               <p className="mt-5 text-base leading-8 text-slate-600">
-                Whether you're optimizing a website, preparing blog images,
+                Whether you&apos;re optimizing a website, preparing blog images,
                 working on an online store or building a frontend project,
                 converting JPG images to WebP should not require a complicated
                 desktop workflow.
