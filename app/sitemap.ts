@@ -3,7 +3,7 @@ import { blogArticles } from "@/lib/blog";
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ||
-  "https://www.letsresizeit.com";
+  "https://letsresizeit.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -186,12 +186,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
 
     // =========================================================
-    // BLOG
+    // BLOG INDEX
+    // =========================================================
+
+    {
+      url: `${siteUrl}/blog`,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+
+    // =========================================================
+    // BLOG ARTICLES
     // =========================================================
     //
-    // Blog URLs are generated automatically from lib/blog.ts.
-    // This means every article added to blogArticles will
-    // automatically appear in the sitemap.
+    // Automatically includes every article in lib/blog.ts.
     //
 
     ...blogArticles.map((article) => ({

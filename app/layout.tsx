@@ -21,12 +21,12 @@ const geistMono = Geist_Mono({
  * For local development:
  * http://localhost:3000
  *
- * For production, set:
- * NEXT_PUBLIC_SITE_URL=https://your-domain.com
+ * For production:
+ * https://letsresizeit.com
  */
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ||
-  "http://letsresizeit.com";
+  "https://letsresizeit.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -34,13 +34,13 @@ export const metadata: Metadata = {
   title: {
     default:
       "Let's Resize It — Free Image Resizer & Compressor Online",
-    template: "%s | Let&apos;s Resize It",
+    template: "%s | Let's Resize It",
   },
 
   description:
     "Resize, compress, and convert images online for free. Set custom dimensions, reduce image file size, and convert JPG, PNG, and WebP images directly in your browser.",
 
-  applicationName: "Let&apos;s Resize It",
+  applicationName: "Let's Resize It",
 
   generator: "Next.js",
 
@@ -63,13 +63,13 @@ export const metadata: Metadata = {
 
   authors: [
     {
-      name: "Let&apos;s Resize It",
+      name: "Let's Resize It",
     },
   ],
 
-  creator: "Let&apos;s Resize It",
+  creator: "Let's Resize It",
 
-  publisher: "Let&apos;s Resize It",
+  publisher: "Let's Resize It",
 
   alternates: {
     canonical: "/",
@@ -93,10 +93,10 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "/",
 
-    siteName: "Let&apos;s Resize It",
+    siteName: "Let's Resize It",
 
     title:
-      "Let&apos;s Resize It — Free Image Resizer & Compressor Online",
+      "Let's Resize It — Free Image Resizer & Compressor Online",
 
     description:
       "Resize, compress, and convert images online for free. Set custom dimensions and file-size limits without uploading your images to a server.",
@@ -107,7 +107,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt:
-          "Let&apos;s Resize It — Free Image Resizer and Image Compressor",
+          "Let's Resize It — Free Image Resizer and Image Compressor",
       },
     ],
   },
@@ -116,7 +116,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
 
     title:
-      "Let&apos;s Resize It — Free Image Resizer & Compressor",
+      "Let's Resize It — Free Image Resizer & Compressor",
 
     description:
       "Resize, compress, and convert images online for free. Process your images directly in your browser.",
