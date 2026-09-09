@@ -2318,6 +2318,690 @@ const websiteImageSize: BlogArticle = {
   ],
 };
 
+/* ============================================================
+   ARTICLE 8
+   ============================================================ */
+
+const imageSizeGuide: BlogArticle = {
+  slug: "image-size-guide",
+
+  title:
+    "Complete Image Size Guide 2026: Dimensions & File Sizes for Websites, Social Media & More",
+
+  seoTitle:
+    "Image Size Guide 2026: Best Dimensions & File Sizes | Lets Resize It",
+
+  description:
+    "Find the best image dimensions and file sizes for websites, social media, forms, profiles, and more. A practical 2026 image size guide with resizing and compression tips.",
+
+  excerpt:
+    "Find practical image dimensions and file-size targets for websites, social media, profiles, forms, thumbnails, and more.",
+
+  primaryKeyword: "image size guide",
+
+  secondaryKeywords: [
+    "image dimensions",
+    "image size chart",
+    "image sizes for websites",
+    "social media image sizes",
+    "photo dimensions",
+    "image file size",
+    "best image dimensions",
+    "image size for forms",
+    "profile picture dimensions",
+    "web image size",
+  ],
+
+  searchIntent:
+    "Informational / reference / practical decision-support",
+
+  recommendedWordCount: 2200,
+
+  ogTitle:
+    "Complete Image Size Guide 2026",
+
+  ogDescription:
+    "Practical image dimensions and file-size recommendations for websites, social media, profiles, forms, and more.",
+
+  content: [
+    {
+  type: "paragraph",
+  text:
+    "Choosing the right image size depends on where the image will be used. A website hero image, Instagram post, profile picture, product photo, thumbnail, and online form can all require different dimensions and file sizes. This image size guide brings the most useful image dimensions and file-size targets together in one place, so you can quickly choose an appropriate size instead of guessing.",
+},
+
+{
+  type: "callout",
+  title: "Quick answer",
+  text:
+    "There is no single image size that works everywhere. Start with the dimensions required by the platform or page, then use the smallest file size that still looks sharp and readable. When possible, resize oversized images and compress them before uploading.",
+},
+    {
+  type: "heading",
+  level: 2,
+  text: "Quick Image Size Chart",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Use this chart as a practical starting point when you need to choose image dimensions and file sizes. Exact requirements can vary by platform, theme, device, or upload form, so check the specific requirements when they are available.",
+},
+
+{
+  type: "table",
+  headers: [
+    "Use case",
+    "Recommended dimensions",
+    "Target file size",
+    "Recommended format",
+  ],
+  rows: [
+    [
+      "Website hero image",
+      "1920 × 1080 px",
+      "Under 300 KB",
+      "WebP or AVIF",
+    ],
+    [
+      "Website/blog image",
+      "1200 × 800 px",
+      "Under 200 KB",
+      "WebP or JPG",
+    ],
+    [
+      "Product image",
+      "1200 × 1200 px",
+      "Under 200 KB",
+      "WebP or JPG",
+    ],
+    [
+      "Social media post",
+      "1080 × 1080 px",
+      "Under 500 KB",
+      "JPG or WebP",
+    ],
+    [
+      "Profile picture",
+      "400 × 400 px",
+      "Under 200 KB",
+      "JPG or WebP",
+    ],
+    [
+      "Thumbnail",
+      "300 × 300 px",
+      "Under 100 KB",
+      "WebP or JPG",
+    ],
+    [
+      "Logo",
+      "300–500 px wide",
+      "Under 100 KB",
+      "SVG, WebP, or PNG",
+    ],
+    [
+      "Online form upload",
+      "800–1200 px wide",
+      "Under 200 KB",
+      "JPG or WebP",
+    ],
+  ],
+},
+
+    {
+  type: "heading",
+  level: 2,
+  text: "Website Image Sizes",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Website images should be large enough to look sharp on the screen but not so large that they unnecessarily slow down the page. The best dimensions depend on the image's role, the layout of your website, and the largest size at which the image will actually be displayed.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "Hero Images and Banners",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Large hero images and banners often span most or all of the screen, so they need more pixels than a small thumbnail. A practical starting point is 1920 × 1080 pixels for a full-width desktop hero image. If the image is displayed in a shorter banner area, a different aspect ratio may be more appropriate.",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Avoid uploading a huge original photograph simply because it looks high quality. If a hero image is displayed at a much smaller size, resizing it first can significantly reduce the amount of data visitors need to download. WebP or AVIF can also help reduce file size while maintaining good visual quality.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "Blog and Article Images",
+},
+
+{
+  type: "paragraph",
+  text:
+    "For blog posts and articles, 1200 × 800 pixels is a useful general-purpose starting point for landscape images. A 1200 × 630 pixel image can also work well for featured images when you want a social-sharing-friendly aspect ratio.",
+},
+
+{
+  type: "paragraph",
+  text:
+    "The important thing is to match the image to the space where it will appear. Uploading a 4000-pixel-wide image when your content area only displays it at around 1200 pixels wide usually adds unnecessary file size without providing a noticeable benefit.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "Product Images",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Product images commonly use square dimensions because they fit neatly into ecommerce grids and product galleries. A practical starting point is 1200 × 1200 pixels, although the exact requirement depends on the ecommerce platform and theme.",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Keep product images consistent in dimensions and aspect ratio when possible. This makes product grids look cleaner and prevents some images from appearing noticeably larger or smaller than others.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "Website Thumbnails",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Thumbnails do not normally need the same dimensions as the original image. Around 300 × 300 pixels is a useful starting point for square thumbnails, while landscape thumbnails may need different dimensions depending on the design.",
+},
+
+{
+  type: "paragraph",
+  text:
+    "For small thumbnails, keeping the file lightweight is especially useful because a page may contain many of them. Resizing and compressing thumbnails before uploading can prevent dozens of unnecessarily large images from increasing page weight.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "Website Logos",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Logos usually do not need large photographic dimensions. A logo around 300–500 pixels wide can be sufficient for many website layouts, but the ideal size depends on how large the logo is displayed.",
+},
+
+{
+  type: "paragraph",
+  text:
+    "When a logo contains simple shapes, text, or transparent areas, SVG is often a strong choice because it can remain sharp at different display sizes. WebP and PNG are useful alternatives when an SVG is not suitable.",
+},
+
+{
+  type: "callout",
+  title: "Website image rule of thumb",
+  text:
+    "Resize images to the largest practical dimensions your website actually needs, then compress them before uploading. Bigger dimensions do not automatically mean better quality when the image is displayed at a much smaller size.",
+},
+    {
+  type: "heading",
+  level: 2,
+  text: "Social Media Image Sizes",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Social media platforms use different image dimensions and aspect ratios for posts, profiles, banners, stories, and thumbnails. Using the right dimensions helps prevent unwanted cropping and keeps important parts of an image visible.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "Instagram Image Sizes",
+},
+
+{
+  type: "paragraph",
+  text:
+    "For Instagram, 1080 × 1080 pixels is a practical starting point for square posts. Portrait posts can use a taller aspect ratio, while Stories and Reels are designed for vertical viewing and commonly use 1080 × 1920 pixels.",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Before uploading, check that important text, faces, logos, or other key elements are positioned safely within the visible area. Platform interfaces can crop or cover parts of an image depending on where it appears.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "Facebook Image Sizes",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Facebook supports several image layouts, including square, landscape, and vertical images. A 1200-pixel-wide image is a useful starting point for many landscape designs, while square graphics can use 1080 × 1080 pixels.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "LinkedIn Image Sizes",
+},
+
+{
+  type: "paragraph",
+  text:
+    "For LinkedIn posts, 1200 × 627 pixels is a practical landscape starting point, while square graphics can use 1080 × 1080 pixels. Choose dimensions based on the type of content and how you want it displayed in the feed.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "X Image Sizes",
+},
+
+{
+  type: "paragraph",
+  text:
+    "For image posts on X, a landscape image around 1600 × 900 pixels can be a useful starting point. Square images can also work well when the content is designed around a 1:1 layout.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "YouTube Image Sizes",
+},
+
+{
+  type: "paragraph",
+  text:
+    "YouTube thumbnails are commonly designed at 1280 × 720 pixels, using a 16:9 aspect ratio. This gives the thumbnail enough resolution to remain clear across different screen sizes.",
+},
+
+{
+  type: "paragraph",
+  text:
+    "For social media images in general, dimensions are only part of the equation. File size also matters. If a platform accepts a large image, that does not necessarily mean you should upload the largest possible file. Resize and compress images when appropriate so they remain clear without carrying unnecessary data.",
+},
+
+{
+  type: "callout",
+  title: "Social media tip",
+  text:
+    "Choose the platform's recommended aspect ratio first, then resize your image to the required dimensions and compress the final file before uploading. This helps reduce unwanted cropping and unnecessary file size.",
+},
+
+    {
+  type: "heading",
+  level: 2,
+  text: "Profile Picture & Avatar Sizes",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Profile pictures and avatars are usually displayed as small square or circular images. Because the same image may be shown at different sizes across devices, starting with a reasonably high-resolution square image gives the platform enough pixels to work with.",
+},
+
+{
+  type: "paragraph",
+  text:
+    "A practical starting point is 400 × 400 pixels for a profile picture or avatar. Some platforms may accept or recommend larger dimensions, so always follow the platform's current requirements when they are provided.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "Why Square Images Work Well for Avatars",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Many profile pictures are displayed inside circular frames even though the uploaded file itself is square. Using a square source image makes it easier to keep the subject centered and reduces the risk of important parts being cropped.",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Leave some space around faces, logos, or other important elements when preparing a profile image. A platform may crop the image into a circle or display it at a smaller size, so placing important details too close to the edges can make them disappear.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "Profile Picture File Size",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Profile pictures generally do not need to be large files. Once the image has been resized to appropriate dimensions, compressing it can reduce the upload size while keeping it visually clear. For many profile images, keeping the final file below 200 KB is a useful practical target.",
+},
+
+{
+  type: "callout",
+  title: "Avatar tip",
+  text:
+    "Start with a square image such as 400 × 400 pixels, keep the main subject centered, and compress the final image before uploading. If the platform specifies different dimensions or file limits, follow those requirements instead.",
+},
+
+    {
+  type: "heading",
+  level: 2,
+  text: "Image File Size Guide",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Image dimensions and image file size are two different things. Dimensions describe how many pixels an image contains, while file size describes how much storage space the image uses. Two images with the same dimensions can have very different file sizes depending on their format, compression level, and visual complexity.",
+},
+
+{
+  type: "paragraph",
+  text:
+    "For websites and online uploads, the goal is usually to use the smallest file that still looks clear enough for its intended purpose. The following ranges can be used as practical starting points rather than strict rules.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "Under 50 KB",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Files under 50 KB are useful for very small graphics, simple icons, tiny thumbnails, and lightweight interface images. Photographs may be difficult to keep at this size without noticeable quality loss, especially when they contain lots of detail.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "50–100 KB",
+},
+
+{
+  type: "paragraph",
+  text:
+    "A file size between 50 KB and 100 KB can work well for small thumbnails, profile images, simple graphics, and other images that do not need to occupy much screen space. This range is particularly useful when a page contains many images.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "100–200 KB",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Around 100–200 KB is a useful target for many ordinary website images. Blog images, product images, and other moderately sized photographs can often be resized and compressed into this range while remaining visually clear.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "200–500 KB",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Files between 200 KB and 500 KB may be reasonable for larger images, detailed photographs, banners, or images that need more visual quality. However, if a page contains many images in this range, the combined page weight can become significant.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "500 KB–1 MB",
+},
+
+{
+  type: "paragraph",
+  text:
+    "A 500 KB to 1 MB image can sometimes be justified when the image is large, detailed, or important to the page. For ordinary web content, however, it is worth checking whether resizing or stronger compression can reduce the file size without a noticeable quality difference.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "When 1 MB or More May Be Justified",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Images larger than 1 MB may be appropriate in situations where high visual detail is genuinely important, such as photography portfolios, large downloadable images, or other content where the original resolution is part of the purpose. They are usually not necessary for small thumbnails, icons, or ordinary website content.",
+},
+
+{
+  type: "callout",
+  title: "File size rule of thumb",
+  text:
+    "Do not chase the smallest possible file size at the expense of image quality. Instead, resize the image to the dimensions you actually need and compress it until you reach a good balance between visual quality and file size.",
+},
+
+    {
+  type: "heading",
+  level: 2,
+  text: "Image File Size Guide",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Image dimensions and image file size are two different things. Dimensions describe how many pixels an image contains, while file size describes how much storage space the image uses. Two images with the same dimensions can have very different file sizes depending on their format, compression level, and visual complexity.",
+},
+
+{
+  type: "paragraph",
+  text:
+    "For websites and online uploads, the goal is usually to use the smallest file that still looks clear enough for its intended purpose. The following ranges can be used as practical starting points rather than strict rules.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "Under 50 KB",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Files under 50 KB are useful for very small graphics, simple icons, tiny thumbnails, and lightweight interface images. Photographs may be difficult to keep at this size without noticeable quality loss, especially when they contain lots of detail.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "50–100 KB",
+},
+
+{
+  type: "paragraph",
+  text:
+    "A file size between 50 KB and 100 KB can work well for small thumbnails, profile images, simple graphics, and other images that do not need to occupy much screen space. This range is particularly useful when a page contains many images.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "100–200 KB",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Around 100–200 KB is a useful target for many ordinary website images. Blog images, product images, and other moderately sized photographs can often be resized and compressed into this range while remaining visually clear.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "200–500 KB",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Files between 200 KB and 500 KB may be reasonable for larger images, detailed photographs, banners, or images that need more visual quality. However, if a page contains many images in this range, the combined page weight can become significant.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "500 KB–1 MB",
+},
+
+{
+  type: "paragraph",
+  text:
+    "A 500 KB to 1 MB image can sometimes be justified when the image is large, detailed, or important to the page. For ordinary web content, however, it is worth checking whether resizing or stronger compression can reduce the file size without a noticeable quality difference.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "When 1 MB or More May Be Justified",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Images larger than 1 MB may be appropriate in situations where high visual detail is genuinely important, such as photography portfolios, large downloadable images, or other content where the original resolution is part of the purpose. They are usually not necessary for small thumbnails, icons, or ordinary website content.",
+},
+
+{
+  type: "callout",
+  title: "File size rule of thumb",
+  text:
+    "Do not chase the smallest possible file size at the expense of image quality. Instead, resize the image to the dimensions you actually need and compress it until you reach a good balance between visual quality and file size.",
+},
+
+    {
+  type: "heading",
+  level: 2,
+  text: "How to Choose the Right Image Dimensions",
+},
+
+{
+  type: "paragraph",
+  text:
+    "The right image dimensions are determined by how large the image needs to appear, where it will be displayed, and whether users need to see fine detail. There is no benefit in uploading a much larger image when the page or platform will display it at a smaller size.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "1. Check Where the Image Will Be Used",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Start by identifying the purpose of the image. A full-width website banner, blog image, product photo, profile picture, thumbnail, and online form upload can all require different dimensions. The correct size is the one that fits the intended use without unnecessary extra pixels.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "2. Find the Display Width",
+},
+
+{
+  type: "paragraph",
+  text:
+    "If you know how wide the image will actually appear on the page, use that as a starting point. For example, if an article image is displayed at roughly 1200 pixels wide, uploading a 4000-pixel-wide original is often unnecessary for that particular display.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "3. Consider the Aspect Ratio",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Aspect ratio describes the relationship between an image's width and height. Common ratios include 1:1 for square images, 16:9 for wide images, and 4:5 for many portrait-oriented designs. Choosing the correct ratio can help prevent unwanted cropping when an image is uploaded to a platform or placed into a fixed design.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "4. Think About Mobile and Desktop Screens",
+},
+
+{
+  type: "paragraph",
+  text:
+    "An image may be displayed differently on desktop and mobile devices. A large desktop banner might occupy a wide area on a monitor but be cropped or rearranged on a phone. Consider responsive layouts when choosing dimensions, especially for hero images and important visual content.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "5. Resize Before You Compress",
+},
+
+{
+  type: "paragraph",
+  text:
+    "If an image is much larger than necessary, resize it first and then compress the resized version. Compressing an oversized image can reduce the file size, but it does not remove the unnecessary pixel dimensions. Resizing first can make the final file considerably more efficient.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "6. Check the Final Image Before Uploading",
+},
+
+{
+  type: "paragraph",
+  text:
+    "After resizing and compressing, open the final image and check it at the size where it will actually be used. Look for blurry text, visible compression artifacts, distorted proportions, or important details being cropped. If the image still looks clear, there is usually little reason to keep a much larger file.",
+},
+
+{
+  type: "callout",
+  title: "Simple decision rule",
+  text:
+    "Choose dimensions based on the largest practical display size, choose an aspect ratio that fits the layout, and then reduce the file size through compression. The goal is not the biggest image—it is the right image.",
+},
+    
+  ],
+
+  faqs: [
+    // FAQs will be added later.
+  ],
+
+  relatedArticles: [
+    // Internal links will be added later.
+  ],
+
+  relatedTools: [
+    // Tool links will be added later.
+  ],
+};
+
 
 /* ============================================================
    BLOG DATABASE
@@ -2343,6 +3027,7 @@ export const blogArticles: BlogArticle[] = [
   jpgVsPngVsWebp,
   resizeWithoutLosingQuality,
   websiteImageSize,
+  imageSizeGuide,
 ];
 
 
