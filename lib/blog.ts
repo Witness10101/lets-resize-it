@@ -617,7 +617,7 @@ const howToResizeTo100KB: BlogArticle = {
     },
     {
       title: "How to Resize an Image",
-      href: "/blog/blog/how-to-resize-an-image",
+      href: "/blog/how-to-resize-an-image",
     },
     {
       title: "How to Resize an Image Without Losing Quality",
@@ -1590,7 +1590,7 @@ const jpgVsPngVsWebp: BlogArticle = {
     },
     {
       title: "What Image Size Should I Use for a Website?",
-      href: "/blog/blog/what-image-size-should-i-use-for-a-website",
+      href: "/blog/what-image-size-should-i-use-for-a-website",
     },
   ],
 
@@ -1843,7 +1843,7 @@ const resizeWithoutLosingQuality: BlogArticle = {
   relatedArticles: [
     {
       title: "How to Resize an Image",
-      href: "/blog/blog/how-to-resize-an-image",
+      href: "/blog/how-to-resize-an-image",
     },
     {
       title: "JPG vs PNG vs WebP",
@@ -2169,7 +2169,7 @@ const websiteImageSize: BlogArticle = {
     },
     {
       title: "How to Resize an Image",
-      href: "/blog/blog/how-to-resize-an-image",
+      href: "/blog/how-to-resize-an-image",
     },
   ],
 
