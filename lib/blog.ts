@@ -1983,10 +1983,18 @@ const websiteImageSize: BlogArticle = {
     "what image size should i use for a website",
 
   secondaryKeywords: [
-    "best image size for website",
-    "ideal website image dimensions",
-    "standard web image sizes",
-  ],
+  "best image size for website",
+  "ideal website image dimensions",
+  "standard web image sizes",
+  "website image dimensions",
+  "best image dimensions for website",
+  "image size for web",
+  "website image size guide",
+  "best image resolution for website",
+  "image dimensions for websites",
+  "web image size",
+  "recommended image size for website",
+],
 
   searchIntent:
     "Reference / practical decision-support",
@@ -2003,7 +2011,7 @@ const websiteImageSize: BlogArticle = {
     {
       type: "paragraph",
       text:
-        "There is no single correct image size for every website. The right dimensions depend on where the image is displayed. A hero banner needs to be much larger than a thumbnail, while a product photo may need enough resolution for customers to zoom.",
+       "The best image size for a website depends on where the image will appear. A hero banner needs different dimensions from a blog image, product photo, thumbnail, or logo. In this guide, you’ll find practical website image dimensions, recommended file sizes, and the best formats to use so your images look sharp without slowing down your pages.",
     },
 
     {
@@ -2020,52 +2028,47 @@ const websiteImageSize: BlogArticle = {
     },
 
     {
-      type: "table",
-      headers: [
-        "Image type",
-        "Recommended dimensions",
-        "Target file size",
-        "Format",
-      ],
-      rows: [
-        [
-          "Hero / banner",
-          "1600–1920px wide, 16:9 typical",
-          "Under ~200 KB",
-          "WebP, JPG fallback",
-        ],
-        [
-          "Blog featured / Open Graph",
-          "1200×630px",
-          "Under ~100 KB",
-          "WebP or JPG",
-        ],
-        [
-          "In-article / inline",
-          "Typically 700–900px wide",
-          "Under ~150 KB",
-          "WebP or JPG",
-        ],
-        [
-          "Product photo",
-          "1000–2000px on the long side",
-          "Under ~300 KB",
-          "WebP or high-quality JPG",
-        ],
-        [
-          "Thumbnail",
-          "300–400px square",
-          "Under ~30–50 KB",
-          "WebP",
-        ],
-        [
-          "Logo",
-          "Approximately 2× display size",
-          "As small as practical",
-          "PNG or SVG",
-        ],
-      ],
-    },
+  type: "table",
+  headers: ["Image type", "Recommended dimensions", "Target file size", "Best format"],
+  rows: [
+    [
+      "Hero / banner",
+      "1920 × 1080 px",
+      "Under 300 KB",
+      "WebP or AVIF",
+    ],
+    [
+      "Blog featured image",
+      "1200 × 630 px",
+      "Under 200 KB",
+      "WebP or JPG",
+    ],
+    [
+      "In-article image",
+      "1200 × 800 px",
+      "Under 200 KB",
+      "WebP or JPG",
+    ],
+    [
+      "Product photo",
+      "1200 × 1200 px",
+      "Under 200 KB",
+      "WebP or JPG",
+    ],
+    [
+      "Thumbnail",
+      "300 × 300 px",
+      "Under 100 KB",
+      "WebP or JPG",
+    ],
+    [
+      "Logo",
+      "300–500 px wide",
+      "Under 100 KB",
+      "SVG, WebP, or PNG",
+    ],
+  ],
+},
 
     {
       type: "paragraph",
@@ -2164,31 +2167,36 @@ const websiteImageSize: BlogArticle = {
     },
 
     {
-      type: "steps",
-      items: [
-        {
-          title: "Choose dimensions based on display size",
-          text:
-            "Measure or inspect the actual area where the image will appear.",
-        },
-        {
-          title: "Choose the format",
-          text:
-            "WebP or JPG can work well for photographs, while PNG is useful for logos and transparency.",
-        },
-        {
-          title: "Compress the image",
-          text:
-            "Reduce file size until the image is small enough without becoming visibly degraded.",
-        },
-        {
-          title: "Check the result on the real page",
-          text:
-            "Do not judge an image only in isolation. Check how it looks at the size visitors actually see.",
-        },
-      ],
+  type: "steps",
+  items: [
+    {
+      title: "1. Resize to the dimensions you actually need",
+      text:
+        "Start with the image dimensions required by the page. Avoid uploading a much larger original when it will only be displayed at a smaller size.",
     },
-
+    {
+      title: "2. Choose an efficient image format",
+      text:
+        "Use WebP or AVIF when supported for efficient web delivery. JPG works well for photographs, while PNG is useful when you need transparency or crisp graphics.",
+    },
+    {
+      title: "3. Compress the image",
+      text:
+        "Compress the image to reduce its file size while keeping the quality visually acceptable. For many website images, aiming for a file size below 200 KB is a useful starting point.",
+    },
+    {
+      title: "4. Check the image on the actual page",
+      text:
+        "View the image at its real display size on both desktop and mobile. Make sure it remains sharp and readable without unnecessarily increasing the page's load size.",
+    },
+    {
+      title: "5. Test the final file size",
+      text:
+        "If the image is still larger than necessary, resize or compress it again. The goal is to use the smallest file that still provides the quality your visitors need.",
+    },
+  ],
+},
+    
     {
       type: "heading",
       level: 2,
@@ -2214,25 +2222,31 @@ const websiteImageSize: BlogArticle = {
   ],
 
   faqs: [
-    {
-      question:
-        "What resolution should website images be?",
-      answer:
-        "Match the resolution to the image's actual rendered size. A practical starting point is around 1.5–2× the rendered size for high-density screens rather than serving the camera's full original resolution.",
-    },
-    {
-      question:
-        "What file size is too big for a website image?",
-      answer:
-        "As a general guideline, most individual web images should stay within a few hundred KB, with hero images and thumbnails toward the lower end and product photos sometimes requiring more. Total page weight matters more than any single image.",
-    },
-    {
-      question:
-        "What format is best for website images?",
-      answer:
-        "WebP is a strong option for many photographic web images, while PNG is useful for logos and images requiring transparency. JPG remains useful for photographs and compatibility.",
-    },
-  ],
+  {
+    question:
+      "What is the best image size for a website?",
+    answer:
+      "There is no single best size for every website image. A practical starting point is 1200 × 630 px for blog or featured images, 1920 × 1080 px for large hero images, and around 300 × 300 px for thumbnails. Always match the dimensions to how the image will actually be displayed.",
+  },
+  {
+    question:
+      "What file size should an image be for a website?",
+    answer:
+      "For most website images, keeping the file size in the low hundreds of KB is a useful target. Many images can be kept below 200 KB, while large hero images may need more. Resize and compress images rather than uploading unnecessarily large original files.",
+  },
+  {
+    question:
+      "Is 1 MB too large for a website image?",
+    answer:
+      "A 1 MB image is often larger than necessary for a typical website image. If the image can be resized and compressed to a few hundred KB while maintaining good visual quality, the smaller version is generally preferable for faster page loading.",
+  },
+  {
+    question:
+      "What format is best for website images?",
+    answer:
+      "WebP or AVIF are efficient choices for many website images. JPG works well for photographs, while PNG is useful when transparency or very crisp graphics are needed. Choose the format that provides the required quality at the smallest practical file size.",
+  },
+],
 
   relatedArticles: [
   {
