@@ -378,19 +378,31 @@ const howToResizeAnImage: BlogArticle = {
   ],
 
   relatedArticles: [
-    {
-      title: "How to Reduce Image Size",
-      href: "/blog/how-to-reduce-image-size",
-      description:
-        "Learn when to resize, compress, or use both.",
-    },
-    {
-      title: "How to Resize an Image Without Losing Quality",
-      href: "/blog/how-to-resize-an-image-without-losing-quality",
-      description:
-        "Understand what causes quality loss and how to avoid it.",
-    },
-  ],
+  {
+    title: "How to Reduce Image Size",
+    href: "/blog/how-to-reduce-image-size",
+    description:
+      "Learn when to resize, compress, or use both.",
+  },
+  {
+    title: "How to Compress an Image",
+    href: "/blog/how-to-compress-an-image",
+    description:
+      "Learn how compression reduces file size without changing dimensions.",
+  },
+  {
+    title: "How to Resize an Image Without Losing Quality",
+    href: "/blog/how-to-resize-an-image-without-losing-quality",
+    description:
+      "Understand what causes quality loss and how to avoid it.",
+  },
+  {
+    title: "What Image Size Should I Use for a Website?",
+    href: "/blog/what-image-size-should-i-use-for-a-website",
+    description:
+      "Choose practical image dimensions and file sizes for websites.",
+  },
+],
 
   relatedTools: [
     {
@@ -611,19 +623,31 @@ const howToResizeTo100KB: BlogArticle = {
   ],
 
   relatedArticles: [
-    {
-      title: "How to Reduce Image Size",
-      href: "/blog/how-to-reduce-image-size",
-    },
-    {
-      title: "How to Resize an Image",
-      href: "/blog/how-to-resize-an-image",
-    },
-    {
-      title: "How to Resize an Image Without Losing Quality",
-      href: "/blog/how-to-resize-an-image-without-losing-quality",
-    },
-  ],
+  {
+    title: "How to Reduce Image Size",
+    href: "/blog/how-to-reduce-image-size",
+    description:
+      "Learn when to resize, compress, or use both to make an image smaller.",
+  },
+  {
+    title: "How to Resize an Image",
+    href: "/blog/how-to-resize-an-image",
+    description:
+      "Learn how pixel dimensions work and how to resize images correctly.",
+  },
+  {
+    title: "How to Compress an Image",
+    href: "/blog/how-to-compress-an-image",
+    description:
+      "Learn how compression can reduce file size while preserving useful image quality.",
+  },
+  {
+    title: "How to Resize an Image Without Losing Quality",
+    href: "/blog/how-to-resize-an-image-without-losing-quality",
+    description:
+      "Learn how to reduce image dimensions while avoiding unnecessary quality loss.",
+  },
+],
 
   relatedTools: [
     {
@@ -1331,19 +1355,37 @@ const howToCompressAnImage: BlogArticle = {
   ],
 
   relatedArticles: [
-    {
-      title: "How to Reduce Image Size",
-      href: "/blog/how-to-reduce-image-size",
-    },
-    {
-      title: "JPG vs PNG vs WebP",
-      href: "/blog/jpg-vs-png-vs-webp",
-    },
-    {
-      title: "How to Resize an Image Without Losing Quality",
-      href: "/blog/how-to-resize-an-image-without-losing-quality",
-    },
-  ],
+  {
+    title: "How to Reduce Image Size",
+    href: "/blog/how-to-reduce-image-size",
+    description:
+      "Learn when to resize, compress, or use both to make an image smaller.",
+  },
+  {
+    title: "How to Resize an Image",
+    href: "/blog/how-to-resize-an-image",
+    description:
+      "Learn how resizing changes image dimensions and when to resize before compressing.",
+  },
+  {
+    title: "JPG vs PNG vs WebP",
+    href: "/blog/jpg-vs-png-vs-webp",
+    description:
+      "Compare image formats and choose the right one for file size and quality.",
+  },
+  {
+    title: "How to Resize an Image Without Losing Quality",
+    href: "/blog/how-to-resize-an-image-without-losing-quality",
+    description:
+      "Learn how to reduce image dimensions while keeping the result sharp.",
+  },
+  {
+    title: "What Image Size Should I Use for a Website?",
+    href: "/blog/what-image-size-should-i-use-for-a-website",
+    description:
+      "Choose practical dimensions and file-size targets for website images.",
+  },
+],
 
   relatedTools: [
     {
@@ -1584,15 +1626,31 @@ const jpgVsPngVsWebp: BlogArticle = {
   ],
 
   relatedArticles: [
-    {
-      title: "How to Compress an Image",
-      href: "/blog/how-to-compress-an-image",
-    },
-    {
-      title: "What Image Size Should I Use for a Website?",
-      href: "/blog/what-image-size-should-i-use-for-a-website",
-    },
-  ],
+  {
+    title: "How to Compress an Image",
+    href: "/blog/how-to-compress-an-image",
+    description:
+      "Learn how compression reduces image file size while keeping useful visual quality.",
+  },
+  {
+    title: "How to Reduce Image Size",
+    href: "/blog/how-to-reduce-image-size",
+    description:
+      "Learn when to resize, compress, or use both to make images smaller.",
+  },
+  {
+    title: "How to Resize an Image Without Losing Quality",
+    href: "/blog/how-to-resize-an-image-without-losing-quality",
+    description:
+      "Understand how resizing and compression affect image quality.",
+  },
+  {
+    title: "What Image Size Should I Use for a Website?",
+    href: "/blog/what-image-size-should-i-use-for-a-website",
+    description:
+      "Choose practical image dimensions and file-size targets for websites.",
+  },
+],
 
   relatedTools: [
     {
@@ -1841,19 +1899,37 @@ const resizeWithoutLosingQuality: BlogArticle = {
   ],
 
   relatedArticles: [
-    {
-      title: "How to Resize an Image",
-      href: "/blog/how-to-resize-an-image",
-    },
-    {
-      title: "JPG vs PNG vs WebP",
-      href: "/blog/jpg-vs-png-vs-webp",
-    },
-    {
-      title: "How to Compress an Image",
-      href: "/blog/how-to-compress-an-image",
-    },
-  ],
+  {
+    title: "How to Resize an Image",
+    href: "/blog/how-to-resize-an-image",
+    description:
+      "Learn the basics of image resizing and how to choose the right dimensions.",
+  },
+  {
+    title: "How to Reduce Image Size",
+    href: "/blog/how-to-reduce-image-size",
+    description:
+      "Learn when to resize, compress, or use both to make an image smaller.",
+  },
+  {
+    title: "How to Compress an Image",
+    href: "/blog/how-to-compress-an-image",
+    description:
+      "Learn how compression affects file size and image quality.",
+  },
+  {
+    title: "JPG vs PNG vs WebP",
+    href: "/blog/jpg-vs-png-vs-webp",
+    description:
+      "Compare image formats and understand which is best for quality and file size.",
+  },
+  {
+    title: "What Image Size Should I Use for a Website?",
+    href: "/blog/what-image-size-should-i-use-for-a-website",
+    description:
+      "Choose practical image dimensions and file-size targets for websites.",
+  },
+],
 
   relatedTools: [
     {
@@ -2159,19 +2235,37 @@ const websiteImageSize: BlogArticle = {
   ],
 
   relatedArticles: [
-    {
-      title: "How to Reduce Image Size",
-      href: "/blog/how-to-reduce-image-size",
-    },
-    {
-      title: "JPG vs PNG vs WebP",
-      href: "/blog/jpg-vs-png-vs-webp",
-    },
-    {
-      title: "How to Resize an Image",
-      href: "/blog/how-to-resize-an-image",
-    },
-  ],
+  {
+    title: "How to Reduce Image Size",
+    href: "/blog/how-to-reduce-image-size",
+    description:
+      "Learn when to resize, compress, or use both to make images smaller.",
+  },
+  {
+    title: "How to Resize an Image",
+    href: "/blog/how-to-resize-an-image",
+    description:
+      "Learn the basics of image resizing and how to choose the right dimensions.",
+  },
+  {
+    title: "How to Compress an Image",
+    href: "/blog/how-to-compress-an-image",
+    description:
+      "Learn how compression affects file size and image quality.",
+  },
+  {
+    title: "JPG vs PNG vs WebP",
+    href: "/blog/jpg-vs-png-vs-webp",
+    description:
+      "Compare image formats and understand which is best for quality and file size.",
+  },
+  {
+    title: "How to Resize an Image Without Losing Quality",
+    href: "/blog/how-to-resize-an-image-without-losing-quality",
+    description:
+      "Learn how to resize images while avoiding unnecessary quality loss.",
+  },
+],
 
   relatedTools: [
     {
