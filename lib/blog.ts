@@ -3177,121 +3177,48 @@ const imageSizeGuide: BlogArticle = {
     
   ],
 
-  faqs: [
-    {
-  type: "heading",
-  level: 2,
-  text: "Frequently Asked Questions",
-},
-
-{
-  type: "heading",
-  level: 3,
-  text: "What is the best image size for a website?",
-},
-
-{
-  type: "paragraph",
-  text:
-    "There is no single best image size for every website. A practical starting point is around 1200 pixels wide for many content images, while larger hero images may need dimensions such as 1920 × 1080 pixels. The correct size depends on where the image appears and how large it is displayed.",
-},
-
-{
-  type: "heading",
-  level: 3,
-  text: "What is a good image file size for a website?",
-},
-
-{
-  type: "paragraph",
-  text:
-    "For many ordinary website images, keeping the final file below 200 KB is a useful starting target. Smaller images such as thumbnails can often be below 100 KB, while large or highly detailed images may reasonably require more. The goal should be a good balance between visual quality and loading efficiency.",
-},
-
-{
-  type: "heading",
-  level: 3,
-  text: "Is 1 MB too large for a website image?",
-},
-
-{
-  type: "paragraph",
-  text:
-    "A 1 MB image is not automatically too large, but it may be more than necessary for many ordinary website images. If the image is large or contains significant detail, a larger file may sometimes be justified. Otherwise, try resizing and compressing it to see whether you can achieve similar visual quality with a smaller file.",
-},
-
-{
-  type: "heading",
-  level: 3,
-  text: "What dimensions should a profile picture be?",
-
-},
-
-{
-  type: "paragraph",
-  text:
-    "A square image around 400 × 400 pixels is a practical starting point for many profile pictures and avatars. Some platforms may require different dimensions or accept larger images, so check the specific platform requirements before uploading.",
-},
-
-{
-  type: "heading",
-  level: 3,
-  text: "What is the best image size for social media?",
-
-},
-
-{
-  type: "paragraph",
-  text:
-    "The best size depends on the platform and content type. For example, 1080 × 1080 pixels is a useful starting point for square social posts, while vertical content such as Stories and Reels commonly uses 1080 × 1920 pixels. Always check the current platform requirements when exact specifications matter.",
-},
-
-{
-  type: "heading",
-  level: 3,
-  text: "Should I resize or compress an image first?",
-
-},
-
-{
-  type: "paragraph",
-  text:
-    "If an image is much larger in dimensions than necessary, resize it first and then compress the resized image. If the dimensions are already appropriate but the file is too large, compression may be enough. Using both methods is often helpful when an image is oversized in both dimensions and file size.",
-},
-
-{
-  type: "heading",
-  level: 3,
-  text: "How can I reduce an image to 100 KB?",
-
-},
-
-{
-  type: "paragraph",
-  text:
-    "First resize the image to dimensions appropriate for its intended use, then compress it while checking the resulting file size and visual quality. If it is still above 100 KB, reduce the dimensions or increase compression gradually until the file meets the limit without becoming unnecessarily blurry.",
-},
-
-{
-  type: "heading",
-  level: 3,
-  text: "Does a higher resolution always mean better image quality?",
-
-},
-
-{
-  type: "paragraph",
-  text:
-    "No. Higher resolution provides more pixels, but those extra pixels may not provide a visible benefit when the image is displayed at a smaller size. An appropriately sized and well-compressed image can look excellent while using much less storage and bandwidth.",
-},
-
-{
-  type: "callout",
-  title: "The short version",
-  text:
-    "Choose the dimensions based on where the image will be displayed, use an appropriate format, and compress the final image to a practical file size. There is no universal image size that is perfect for every situation.",
-},
-  ],
+faqs: [
+  {
+    question: "What is the best image size for a website?",
+    answer:
+      "There is no single best image size for every website. A practical starting point is around 1200 pixels wide for many content images, while larger hero images may need dimensions such as 1920 × 1080 pixels. The correct size depends on where the image appears and how large it is displayed.",
+  },
+  {
+    question: "What is a good image file size for a website?",
+    answer:
+      "For many ordinary website images, keeping the final file below 200 KB is a useful starting target. Smaller images such as thumbnails can often be below 100 KB, while large or highly detailed images may reasonably require more. The goal should be a good balance between visual quality and file size.",
+  },
+  {
+    question: "Is 1 MB too large for a website image?",
+    answer:
+      "A 1 MB image is not automatically too large, but it may be more than necessary for many ordinary website images. If the image is large or contains significant detail, a larger file may sometimes be justified. Otherwise, try resizing and compressing it to see whether you can achieve similar visual quality with a smaller file.",
+  },
+  {
+    question: "What dimensions should a profile picture be?",
+    answer:
+      "A square image around 400 × 400 pixels is a practical starting point for many profile pictures and avatars. Some platforms may require different dimensions or accept larger images, so check the specific platform requirements before uploading.",
+  },
+  {
+    question: "What is the best image size for social media?",
+    answer:
+      "The best size depends on the platform and content type. For example, 1080 × 1080 pixels is a useful starting point for square social posts, while vertical content such as Stories and Reels commonly uses 1080 × 1920 pixels. Always check the current platform requirements when exact specifications matter.",
+  },
+  {
+    question: "Should I resize or compress an image first?",
+    answer:
+      "If an image is much larger in dimensions than necessary, resize it first and then compress the resized image. If the dimensions are already appropriate but the file is too large, compression may be enough. Using both methods is often helpful when an image is oversized in both dimensions and file size.",
+  },
+  {
+    question: "How can I reduce an image to 100 KB?",
+    answer:
+      "First resize the image to dimensions appropriate for its intended use, then compress it while checking the resulting file size and visual quality. If it is still above 100 KB, reduce the dimensions or increase compression gradually until the file meets the limit without becoming unnecessarily blurry.",
+  },
+  {
+    question: "Does a higher resolution always mean better image quality?",
+    answer:
+      "No. Higher resolution provides more pixels, but those extra pixels may not provide a visible benefit when the image is displayed at a smaller size. An appropriately sized and well-compressed image can look excellent while using much less storage and bandwidth.",
+  },
+],
 
   relatedArticles: [
   {
