@@ -2986,20 +2986,384 @@ const imageSizeGuide: BlogArticle = {
   text:
     "Choose dimensions based on the largest practical display size, choose an aspect ratio that fits the layout, and then reduce the file size through compression. The goal is not the biggest image—it is the right image.",
 },
+
+    {
+  type: "heading",
+  level: 2,
+  text: "How to Reduce Image File Size",
+},
+
+{
+  type: "paragraph",
+  text:
+    "If an image is too large for a website, form, profile, or upload limit, you usually have two main options: reduce its dimensions, compress it, or use both methods together. The best approach depends on whether the image is too large in pixels, too large in file size, or both.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "1. Resize the Image",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Start by checking whether the image dimensions are larger than necessary. For example, if an upload only needs an image around 1200 pixels wide, resizing a 4000-pixel-wide photograph can remove a large amount of unnecessary data while keeping the image suitable for its intended use.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "2. Compress the Image",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Compression reduces the amount of data stored in an image file. The right compression level depends on the image and the format. Too little compression leaves the file unnecessarily large, while excessive compression can introduce visible artifacts or make details look blurry.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "3. Choose an Efficient Format",
+},
+
+{
+  type: "paragraph",
+  text:
+    "The image format can have a significant effect on file size. JPG is commonly useful for photographs, PNG is useful when transparency or crisp graphics are important, and newer formats such as WebP and AVIF can provide efficient compression for many web images.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "4. Combine Resizing and Compression",
+},
+
+{
+  type: "paragraph",
+  text:
+    "When an image is both oversized and too large in file size, resizing and compression together are usually more effective than relying on either method alone. First resize the image to appropriate dimensions, then compress the resulting file and check the final quality.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "5. Check the Final File Size",
+},
+
+{
+  type: "paragraph",
+  text:
+    "After processing the image, check its actual file size rather than assuming it meets your requirement. If a website or form has a specific limit such as 50 KB, 100 KB, or 500 KB, continue adjusting the dimensions or compression until the image meets the limit without becoming unnecessarily poor in quality.",
+},
+
+{
+  type: "callout",
+  title: "Need to make an image smaller?",
+  text:
+    "If you need to reduce an image quickly, resize it to the required dimensions and compress the result. This is often the simplest way to reduce both pixel dimensions and file size before uploading.",
+},
+
+    {
+  type: "heading",
+  level: 2,
+  text: "Common Image Size Mistakes",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Choosing image sizes is not only about finding the right number of pixels. Many image problems happen because the dimensions, aspect ratio, format, and file size are not considered together.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "Uploading the Original Camera Image",
+},
+
+{
+  type: "paragraph",
+  text:
+    "Modern phones and cameras can produce very large images. Uploading these originals directly to a website or online form can create unnecessarily large files. If the image will only be displayed at a smaller size, resize it before uploading.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "Using More Pixels Than You Need",
+},
+
+{
+  type: "paragraph",
+  text:
+    "A larger image is not automatically a better image. If an image is displayed at 800 pixels wide, uploading a 4000-pixel-wide version may add file size without providing a meaningful visual benefit at its normal display size.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "Ignoring the Aspect Ratio",
+},
+
+{
+  type: "paragraph",
+  text:
+    "An image can have enough pixels and still look wrong if its aspect ratio does not match the space where it is used. Stretching an image or allowing important parts to be cropped can make the final result look unprofessional.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "Compressing Too Aggressively",
+
+},
+
+{
+  type: "paragraph",
+  text:
+    "Reducing file size as much as possible is not always the right goal. Excessive compression can create blocky edges, blurry details, visible artifacts, and poor-looking text. Aim for a balance between file size and visual quality.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "Using the Wrong File Format",
+
+},
+
+{
+  type: "paragraph",
+  text:
+    "Different image formats are designed for different situations. A photographic image may work well as JPG or WebP, while a graphic that needs transparency may be better suited to PNG or another format that supports transparency. Using an inefficient format can result in a larger file than necessary.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "Confusing Image Dimensions With File Size",
+
+},
+
+{
+  type: "paragraph",
+  text:
+    "A 1200 × 1200 image does not automatically have a particular file size. File size depends on factors such as format, compression, image complexity, and metadata. If a website says an image must be below 100 KB, changing the dimensions alone may not be enough—you may also need to compress the file.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "Uploading an Image Without Checking It",
+
+},
+
+{
+  type: "paragraph",
+  text:
+    "Before uploading an important image, check its dimensions, file format, file size, and appearance. A quick final check can prevent rejected uploads, unwanted cropping, blurry images, and unnecessarily large files.",
+},
+
+{
+  type: "callout",
+  title: "Avoid the most common mistake",
+  text:
+    "Don't choose image dimensions simply because a number looks large or high quality. Choose dimensions based on where the image will be displayed, then optimize the final file for size and quality.",
+},
+
+    
     
   ],
 
   faqs: [
-    // FAQs will be added later.
+    {
+  type: "heading",
+  level: 2,
+  text: "Frequently Asked Questions",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "What is the best image size for a website?",
+},
+
+{
+  type: "paragraph",
+  text:
+    "There is no single best image size for every website. A practical starting point is around 1200 pixels wide for many content images, while larger hero images may need dimensions such as 1920 × 1080 pixels. The correct size depends on where the image appears and how large it is displayed.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "What is a good image file size for a website?",
+},
+
+{
+  type: "paragraph",
+  text:
+    "For many ordinary website images, keeping the final file below 200 KB is a useful starting target. Smaller images such as thumbnails can often be below 100 KB, while large or highly detailed images may reasonably require more. The goal should be a good balance between visual quality and loading efficiency.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "Is 1 MB too large for a website image?",
+},
+
+{
+  type: "paragraph",
+  text:
+    "A 1 MB image is not automatically too large, but it may be more than necessary for many ordinary website images. If the image is large or contains significant detail, a larger file may sometimes be justified. Otherwise, try resizing and compressing it to see whether you can achieve similar visual quality with a smaller file.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "What dimensions should a profile picture be?",
+
+},
+
+{
+  type: "paragraph",
+  text:
+    "A square image around 400 × 400 pixels is a practical starting point for many profile pictures and avatars. Some platforms may require different dimensions or accept larger images, so check the specific platform requirements before uploading.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "What is the best image size for social media?",
+
+},
+
+{
+  type: "paragraph",
+  text:
+    "The best size depends on the platform and content type. For example, 1080 × 1080 pixels is a useful starting point for square social posts, while vertical content such as Stories and Reels commonly uses 1080 × 1920 pixels. Always check the current platform requirements when exact specifications matter.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "Should I resize or compress an image first?",
+
+},
+
+{
+  type: "paragraph",
+  text:
+    "If an image is much larger in dimensions than necessary, resize it first and then compress the resized image. If the dimensions are already appropriate but the file is too large, compression may be enough. Using both methods is often helpful when an image is oversized in both dimensions and file size.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "How can I reduce an image to 100 KB?",
+
+},
+
+{
+  type: "paragraph",
+  text:
+    "First resize the image to dimensions appropriate for its intended use, then compress it while checking the resulting file size and visual quality. If it is still above 100 KB, reduce the dimensions or increase compression gradually until the file meets the limit without becoming unnecessarily blurry.",
+},
+
+{
+  type: "heading",
+  level: 3,
+  text: "Does a higher resolution always mean better image quality?",
+
+},
+
+{
+  type: "paragraph",
+  text:
+    "No. Higher resolution provides more pixels, but those extra pixels may not provide a visible benefit when the image is displayed at a smaller size. An appropriately sized and well-compressed image can look excellent while using much less storage and bandwidth.",
+},
+
+{
+  type: "callout",
+  title: "The short version",
+  text:
+    "Choose the dimensions based on where the image will be displayed, use an appropriate format, and compress the final image to a practical file size. There is no universal image size that is perfect for every situation.",
+},
   ],
 
   relatedArticles: [
-    // Internal links will be added later.
-  ],
+  {
+    title: "How to Resize an Image",
+    href: "/blog/how-to-resize-an-image",
+    description:
+      "Learn how to resize images to specific dimensions while choosing the right size for your needs.",
+  },
+  {
+    title: "How to Reduce Image Size",
+    href: "/blog/how-to-reduce-image-size",
+    description:
+      "Learn when to resize, compress, or use both methods to make photos and pictures smaller.",
+  },
+  {
+    title: "How to Compress an Image",
+    href: "/blog/how-to-compress-an-image",
+    description:
+      "Learn how image compression reduces file size while maintaining practical image quality.",
+  },
+  {
+    title: "How to Resize an Image Without Losing Quality",
+    href: "/blog/how-to-resize-an-image-without-losing-quality",
+    description:
+      "Learn how to choose dimensions and resizing methods that help preserve image quality.",
+  },
+  {
+    title: "What Image Size Should I Use for a Website?",
+    href: "/blog/what-image-size-should-i-use-for-a-website",
+    description:
+      "Find practical website image dimensions and file-size targets for different types of web images.",
+  },
+],
 
   relatedTools: [
-    // Tool links will be added later.
-  ],
+  {
+    title: "Resize Image",
+    href: "/resize-image",
+    description:
+      "Resize an image to the exact width and height you need.",
+  },
+  {
+    title: "Resize Image to 100 KB",
+    href: "/resize-image-to-100-kb",
+    description:
+      "Reduce an image to approximately 100 KB for websites, forms, and uploads.",
+  },
+  {
+    title: "Resize Image to 50 KB",
+    href: "/resize-image-to-50-kb",
+    description:
+      "Make an image smaller when you need to meet a 50 KB upload limit.",
+  },
+  {
+    title: "Resize Image to 500 KB",
+    href: "/resize-image-to-500-kb",
+    description:
+      "Reduce an image to approximately 500 KB while keeping practical image quality.",
+  },
+  {
+    title: "Resize Image to 300×300",
+    href: "/resize-image-to-300x300",
+    description:
+      "Quickly resize an image to 300 × 300 pixels for thumbnails, avatars, and other square uses.",
+  },
+  {
+    title: "Resize Image to 1080×1080",
+    href: "/resize-image-to-1080x1080",
+    description:
+      "Resize an image to 1080 × 1080 pixels for square social media content and other uses.",
+  },
+],
 };
 
 
